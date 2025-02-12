@@ -6,6 +6,8 @@
   --background: #ffffff;
   --foreground: #606060;
   --primaryColor: #0b8f50;
+  --secondaryGrey: #222222;
+  --secondaryBackground: rgba(231, 244, 238, 1);
 }
 
 body {

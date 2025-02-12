@@ -1,8 +1,109 @@
 .heroSection {
-  padding: 100px 120px 150px;
-  background-color: greenyellow;
+  padding: 20px;
+  /* background-color: greenyellow; */
 }
 
 .heroDescribe {
-  background-color: orange;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heroTitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--primaryColor);
+  margin-bottom: 16px;
+  line-height: 38.4px;
+}
+
+.heroText {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  line-height: 28px;
+}
+
+.heroSignUp {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 44px;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+
+  cursor: pointer;
+
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.heroMetrics {
+  display: flex;
+  justify-content: center;
+}
+
+.metricsBlock {
+  text-align: justify;
+}
+
+.metricsBlock:not(:last-child) {
+  border-right: 1px solid var(--secondaryGrey);
+  padding-right: 29px;
+}
+
+.metricsBlock:not(:first-child) {
+  padding-left: 29px;
+}
+
+.metricNumbers {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--secondaryGrey);
+}
+
+.metricLabel {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--secondaryGrey);
+}
+
+.heroImgContainer {
+  height: 400px;
+  /* background-color: orange; */
+}
+
+.heroImageDiv {
+  height: auto;
+  background-color: var(--secondaryBackground);
+
+  position: relative;
+  bottom: -83px;
+  z-index: -1;
+}
+
+.heroImg {
+  position: relative;
+  top: -60px;
+
+  z-index: 1;
+}
+
+.heroImgCaption {
+  margin-top: -95px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  color: #000;
+  padding: 10px;
+
+  position: relative;
+  border-radius: 6px;
+
+  background: rgba(231, 244, 238, 0.7);
+
+  z-index: 10;
 }
