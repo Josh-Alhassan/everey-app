@@ -2,39 +2,65 @@ import React from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import heroImage from "../../public/heroImage.png";
+import { StaticImageData } from "next/image";
 
-// Defined TypeScript interfaces for props
+// Defined TypeScript interfaces for content
 interface Metric {
   value: string;
   label: string;
 }
 
-const Hero: React.FC = () => {
-  // Metrics data (can be fetched from an API or passed as props)
-  const metrics: Metric[] = [
+interface HeroContent {
+  title: string;
+  description: string;
+  cta: {
+    text: string;
+    link: string;
+  };
+  metrics: Metric[];
+  image: {
+    src: StaticImageData;
+    alt: string;
+    caption: string;
+  };
+}
+
+// Externalized content
+const heroContent: HeroContent = {
+  title: "Advance Your Research with Everey",
+  description:
+    "Everey is Africa's leading platform for academic collaboration, data-driven insights, and sustainable research funding. We connect researchers, institutions, and organizations to accelerate innovation.",
+  cta: {
+    text: "Sign Up",
+    link: "#",
+  },
+  metrics: [
     { value: "2.5M+", label: "Active Users" },
     { value: "8.4M+", label: "Articles" },
-  ];
+  ],
+  image: {
+    src: heroImage,
+    alt: "Black School Teenage Boy",
+    caption: "Trusted by over 10 Thousand Institutions",
+  },
+};
 
+const Hero: React.FC = () => {
   return (
     <section className={styles.heroSection}>
       {/* Text Content */}
       <div className={styles.heroDescribe}>
-        <h1 className={styles.heroTitle}>Advance Your Research with Everey</h1>
-        <p className={styles.heroText}>
-          Everey is Africa's leading platform for academic collaboration,
-          data-driven insights, and sustainable research funding. We connect
-          researchers, institutions, and organizations to accelerate innovation.
-        </p>
+        <h1 className={styles.heroTitle}>{heroContent.title}</h1>
+        <p className={styles.heroText}>{heroContent.description}</p>
 
         {/* Call-to-Action Button */}
-        <a href="#" className={styles.heroSignUp}>
-          Sign Up
+        <a href={heroContent.cta.link} className={styles.heroSignUp}>
+          {heroContent.cta.text}
         </a>
 
         {/* Metrics Section */}
         <div className={styles.heroMetrics}>
-          {metrics.map((metric, index) => (
+          {heroContent.metrics.map((metric, index) => (
             <div key={index} className={styles.metricsBlock}>
               <h3 className={styles.metricNumbers}>{metric.value}</h3>
               <p className={styles.metricLabel}>{metric.label}</p>
@@ -47,13 +73,13 @@ const Hero: React.FC = () => {
       <div className={styles.heroImgContainer}>
         <figure className={styles.heroImageDiv}>
           <Image
-            src={heroImage}
-            alt="Black School Teenage Boy"
+            src={heroContent.image.src}
+            alt={heroContent.image.alt}
             className={styles.heroImg}
             priority
           />
           <figcaption className={styles.heroImgCaption}>
-            Trusted by over 10 Thousand Institutions
+            {heroContent.image.caption}
           </figcaption>
         </figure>
       </div>
