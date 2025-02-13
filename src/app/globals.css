@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #606060;
   --primaryColor: #0b8f50;
   --secondaryGrey: #222222;
   --secondaryBackground: rgba(231, 244, 238, 1);
+  --tertiary-background: rgba(247, 249, 249, 1);
+  --dark-background: rgba(0, 3, 19, 1);
+  --alt-text: rgba(43, 43, 61, 1);
 }
 
 body {

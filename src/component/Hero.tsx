@@ -23,6 +23,10 @@ interface HeroContent {
     alt: string;
     caption: string;
   };
+  outOfFlow: {
+    research: string;
+    publications: string;
+  };
 }
 
 // Externalized content
@@ -42,6 +46,10 @@ const heroContent: HeroContent = {
     src: heroImage,
     alt: "Black School Teenage Boy",
     caption: "Trusted by over 10 Thousand Institutions",
+  },
+  outOfFlow: {
+    research: "Research Works",
+    publications: "Publications",
   },
 };
 
@@ -82,6 +90,16 @@ const Hero: React.FC = () => {
             {heroContent.image.caption}
           </figcaption>
         </figure>
+
+        {/* Out of flow of page Elements */}
+        <div className={styles.outOfFlow}>
+          <div className={styles.outOfFlowResearch}>
+            {heroContent.outOfFlow.research}
+          </div>
+          <div className={styles.outOfFlowPublication}>
+            {heroContent.outOfFlow.publications}
+          </div>
+        </div>
       </div>
     </section>
   );

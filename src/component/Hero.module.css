@@ -93,7 +93,7 @@
 }
 
 .heroImgCaption {
-  margin-top: -110px;
+  margin-top: -100px;
   text-align: center;
   font-weight: 500;
   font-size: 13px;
@@ -106,6 +106,41 @@
   background: rgba(231, 244, 238, 0.7);
 
   z-index: 10;
+}
+
+/* #################### */
+/* OUT OF FLOW ELEMENTS */
+/* #################### */
+
+.outOfFlow {
+  position: relative;
+}
+
+.outOfFlowResearch,
+.outOfFlowPublication {
+  color: var(--alt-text);
+  padding: 12px 24px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 11px;
+  font-weight: 600;
+
+  position: absolute;
+}
+
+.outOfFlowResearch {
+  background-color: var(--tertiary-background);
+  color: rgba(43, 43, 61, 1);
+
+  top: -120px;
+  right: 0px;
+}
+
+.outOfFlowPublication {
+  background: var(--dark-background);
+  color: #ffffff;
+
+  top: -20px;
 }
 
 /* Styles for tablets (min-width: 768px) */
@@ -164,5 +199,88 @@
   .heroImgCaption {
     font-size: 14px;
     padding: 12px;
+    margin-top: -155px;
+  }
+
+  .outOfFlowPublication,
+  .outOfFlowResearch {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
+
+  .outOfFlowResearch {
+    top: -150px;
+  }
+
+  .outOfFlowPublication {
+    top: -50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroSection {
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+  }
+
+  .heroDescribe {
+    text-align: left;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+
+    padding-top: 62px;
+  }
+
+  .heroText {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .heroSignUp {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 78px;
+  }
+
+  .heroMetrics {
+    justify-content: flex-start;
+  }
+
+  .heroImgContainer {
+    padding-top: 80px;
+    align-self: flex-start;
+  }
+
+  .heroImg {
+    width: 581px;
+    height: auto;
+  }
+
+  .heroImgCaption {
+    top: -30px;
+  }
+
+  .metricNumbers {
+    font-size: 44px;
+  }
+  .metricLabel {
+    font-size: 20px;
+  }
+
+  .outOfFlowResearch {
+    right: -50px;
+  }
+
+  .outOfFlowPublication {
+    left: -40px;
   }
 }
