@@ -277,12 +277,19 @@
     font-size: 20px;
   }
 
+  .outOfFlowPublication,
+  .outOfFlowResearch {
+    border-radius: 16px;
+  }
+
   .outOfFlowResearch {
     right: -50px;
+    top: -250px;
   }
 
   .outOfFlowPublication {
     left: -40px;
+    top: -70px;
   }
 }
 
