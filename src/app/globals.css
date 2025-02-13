@@ -23,4 +23,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Inter", Arial, Helvetica, sans-serif;
+
+  max-width: 1440px;
+  margin: 0 auto;
 }

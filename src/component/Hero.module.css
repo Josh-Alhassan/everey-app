@@ -267,6 +267,7 @@
 
   .heroImgCaption {
     top: -30px;
+    font-size: 20px;
   }
 
   .metricNumbers {
@@ -282,5 +283,26 @@
 
   .outOfFlowPublication {
     left: -40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroSection {
+    padding: 100px;
+    gap: 100px;
+  }
+
+  .outOfFlowPublication {
+    top: -100px;
+    left: -50px;
+  }
+
+  .outOfFlowResearch {
+    top: -350px;
+    right: -50px;
+  }
+
+  .heroImgCaption {
+    margin-top: -200px;
   }
 }
