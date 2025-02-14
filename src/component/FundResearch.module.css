@@ -1,0 +1,84 @@
+.fundResearchContainer {
+  background-color: var(--primaryColor);
+  padding: 80px 20px;
+}
+
+.fundResearchTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--color-white-3);
+
+  margin-bottom: 8px;
+}
+
+.fundResearchText {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-white-3);
+  text-align: center;
+
+  margin-bottom: 56px;
+}
+
+.fundResearchLink {
+  display: block;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--primaryColor);
+  background-color: var(--background);
+
+  width: fit-content;
+
+  margin: 0 auto;
+
+  border-radius: 16px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .fundResearchContainer {
+    padding: 120px 40px; /* Increase padding for larger screens */
+  }
+
+  .fundResearchTitle {
+    font-size: 32px; /* Larger font size for better readability */
+    line-height: 38px; /* Adjust line height for larger font */
+    margin-bottom: 16px; /* Increase margin for better spacing */
+    /* text-align: left; */
+  }
+
+  .fundResearchText {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    line-height: 24px; /* Adjust line height for larger font */
+    margin-bottom: 64px; /* Increase margin for better spacing */
+    /* text-align: left; */
+  }
+
+  .fundResearchLink {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    padding: 16px 40px; /* Increase padding for better clickability */
+    border-radius: 20px; /* Slightly larger border radius for a modern look */
+  }
+}
+
+@media (min-width: 1024px) {
+  .fundResearchTitle {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+  }
+
+  .fundResearchText {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .fundResearchLink {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

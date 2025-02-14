@@ -11,6 +11,8 @@
 :root {
   --background: #ffffff;
   --text-color: rgba(255, 255, 255, 1);
+  --color-white-3: rgba(230, 242, 236, 1);
+
   --foreground: #606060;
   --primaryColor: rgb(11, 143, 80);
   --text-color-green: rgba(11, 143, 80, 1);
