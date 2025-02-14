@@ -37,3 +37,30 @@
 
   border-radius: 16px;
 }
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .fundResearchContainer {
+    padding: 120px 40px; /* Increase padding for larger screens */
+  }
+
+  .fundResearchTitle {
+    font-size: 32px; /* Larger font size for better readability */
+    line-height: 38px; /* Adjust line height for larger font */
+    margin-bottom: 16px; /* Increase margin for better spacing */
+    text-align: left;
+  }
+
+  .fundResearchText {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    line-height: 24px; /* Adjust line height for larger font */
+    margin-bottom: 64px; /* Increase margin for better spacing */
+    text-align: left;
+  }
+
+  .fundResearchLink {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    padding: 16px 40px; /* Increase padding for better clickability */
+    border-radius: 20px; /* Slightly larger border radius for a modern look */
+  }
+}
