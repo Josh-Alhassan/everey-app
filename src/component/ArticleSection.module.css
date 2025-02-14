@@ -1,0 +1,169 @@
+.articleSection {
+  padding: 80px 20px;
+}
+
+.articleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.articleHeaderTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.articleHeaderText {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primaryColor);
+}
+
+.articleContainer {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.articleCard {
+  padding: 20px;
+  box-shadow: 0px 1.82px 7.79px 0px rgba(12, 26, 75, 0.14);
+  border-radius: 16px;
+  margin-bottom: 20px;
+
+  max-width: 425px;
+}
+
+.articleHeaderImage {
+  margin-bottom: 22px;
+}
+
+.articleImg {
+  border-radius: 11px;
+}
+
+.articleLabel {
+  display: block;
+  padding: 6px 15px;
+  background: var(--color-green-3);
+  width: fit-content;
+  font-weight: 500;
+  color: var(--text-color);
+  border-radius: 7px;
+
+  margin-top: 10px;
+}
+
+.authorSection {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.authorDetail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 11px;
+}
+
+.authorImg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.authorInfoName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.authorInfoDate {
+  font-size: 12px;
+  color: var(--color-text-2);
+  line-height: 20px;
+}
+
+.articleTitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+
+  margin-bottom: 11px;
+}
+
+.articlePreview {
+  color: var(--color-grey-2);
+  /* text-align: justify; */
+  margin-bottom: 22px;
+}
+
+.articleReadMore {
+  color: var(--color-grey-3);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .articleSection {
+    padding: 100px 40px; /* Increase padding for larger screens */
+  }
+
+  .articleHeaderTitle {
+    font-size: 32px; /* Larger font size for better readability */
+    line-height: 38px; /* Adjust line height for larger font */
+  }
+
+  .articleHeaderText {
+    font-size: 16px; /* Slightly larger font size for better readability */
+  }
+
+  .articleContainer {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 24px; /* Add gap between cards */
+  }
+
+  .articleCard {
+    margin-bottom: 0; /* Remove bottom margin since gap handles spacing */
+    max-width: 100%; /* Allow cards to take full width of their column */
+  }
+
+  .articleImg {
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+  }
+
+  .articleTitle {
+    font-size: 20px; /* Larger font size for better readability */
+    line-height: 28px; /* Adjust line height for larger font */
+  }
+
+  .articlePreview {
+    font-size: 14px; /* Slightly larger font size for better readability */
+  }
+
+  .articleReadMore {
+    font-size: 16px; /* Slightly larger font size for better readability */
+  }
+}
+
+@media (min-width: 1024px) {
+  .articleSection {
+    padding: 100px 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .articleContainer {
+    grid-template-columns: repeat(3, 1fr); /* Two columns for tablets */
+    gap: 24px; /* Add gap between cards */
+  }
+}
