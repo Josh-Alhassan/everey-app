@@ -1,0 +1,99 @@
+.areaSection {
+  background-color: var(--background-color-green);
+  padding: 60px 20px;
+}
+
+.areaHeader {
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.areaHeaderTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.areaHeaderText {
+  font-size: 14px;
+}
+
+.areaHeaderText,
+.areaHeaderTitle {
+  color: var(--text-color);
+}
+
+.areaFields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.areaField {
+  color: var(--text-color-green);
+  background: var(--background);
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .areaSection {
+    padding: 80px 40px;
+  }
+
+  .areaHeader {
+    margin-bottom: 60px;
+  }
+
+  .areaHeaderTitle {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .areaHeaderText {
+    font-size: 16px;
+  }
+
+  .areaFields {
+    gap: 32px;
+  }
+
+  .areaField {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .areaSection {
+    padding: 100px 120px;
+  }
+
+  .areaHeader {
+    margin-bottom: 72px;
+  }
+
+  .areaHeaderTitle {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .areaHeaderText {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .areaField {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 12px 24px;
+  }
+}

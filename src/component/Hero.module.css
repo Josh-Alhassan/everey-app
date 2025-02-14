@@ -146,7 +146,8 @@
 /* Styles for tablets (min-width: 768px) */
 @media (min-width: 768px) {
   .heroSection {
-    padding: 50px;
+    padding: 80px 40px;
+    padding-bottom: 0;
   }
 
   .heroDescribe {
@@ -295,7 +296,7 @@
 
 @media (min-width: 1280px) {
   .heroSection {
-    padding: 100px;
+    padding: 100px 120px;
     gap: 100px;
   }
 

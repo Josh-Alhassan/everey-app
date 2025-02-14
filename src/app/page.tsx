@@ -1,3 +1,4 @@
+import AreaOfSpecialization from "@/component/AreaOfSpecialization";
 import Hero from "@/component/Hero";
 import { Inter } from "next/font/google";
 
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <AreaOfSpecialization />
       <footer></footer>
     </div>
   );
