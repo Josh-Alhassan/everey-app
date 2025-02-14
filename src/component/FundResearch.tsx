@@ -1,19 +1,25 @@
 import React from "react";
 import styles from "./FundResearch.module.css";
 
-const FundResearch: React.FC = () => {
+interface FundResearchProps {
+  title: string;
+  description: string;
+  ctaText: string;
+  ctaLink: string;
+}
+
+const FundResearch: React.FC<FundResearchProps> = ({
+  title,
+  description,
+  ctaText,
+  ctaLink,
+}) => {
   return (
     <section className={styles.fundResearchContainer}>
-      <h2 className={styles.fundResearchTitle}>
-        Find The Perfect Research Team For Your Project.
-      </h2>
-      <p className={styles.fundResearchText}>
-        With the power of a data driven community we have the right team for
-        whatever it is that you need.
-      </p>
-
-      <a href="#" className={styles.fundResearchLink}>
-        Fund a research
+      <h2 className={styles.fundResearchTitle}>{title}</h2>
+      <p className={styles.fundResearchText}>{description}</p>
+      <a href={ctaLink} className={styles.fundResearchLink}>
+        {ctaText}
       </a>
     </section>
   );

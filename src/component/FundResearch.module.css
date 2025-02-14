@@ -48,19 +48,37 @@
     font-size: 32px; /* Larger font size for better readability */
     line-height: 38px; /* Adjust line height for larger font */
     margin-bottom: 16px; /* Increase margin for better spacing */
-    text-align: left;
+    /* text-align: left; */
   }
 
   .fundResearchText {
     font-size: 18px; /* Slightly larger font size for better readability */
     line-height: 24px; /* Adjust line height for larger font */
     margin-bottom: 64px; /* Increase margin for better spacing */
-    text-align: left;
+    /* text-align: left; */
   }
 
   .fundResearchLink {
     font-size: 18px; /* Slightly larger font size for better readability */
     padding: 16px 40px; /* Increase padding for better clickability */
     border-radius: 20px; /* Slightly larger border radius for a modern look */
+  }
+}
+
+@media (min-width: 1024px) {
+  .fundResearchTitle {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+  }
+
+  .fundResearchText {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .fundResearchLink {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
