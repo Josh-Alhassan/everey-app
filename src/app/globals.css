@@ -10,8 +10,11 @@
 
 :root {
   --background: #ffffff;
+  --text-color: rgba(255, 255, 255, 1);
   --foreground: #606060;
-  --primaryColor: #0b8f50;
+  --primaryColor: rgb(11, 143, 80);
+  --text-color-green: rgba(11, 143, 80, 1);
+  --background-color-green: rgba(11, 143, 80, 1);
   --secondaryGrey: #222222;
   --secondaryBackground: rgba(231, 244, 238, 1);
   --tertiary-background: rgba(247, 249, 249, 1);

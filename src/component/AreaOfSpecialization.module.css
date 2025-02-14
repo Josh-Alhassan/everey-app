@@ -1,0 +1,46 @@
+.areaSection {
+  background-color: var(--background-color-green);
+  padding: 60px 20px;
+}
+
+.areaHeader {
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.areaHeaderTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.areaHeaderText {
+  font-size: 14px;
+}
+
+.areaHeaderText,
+.areaHeaderTitle {
+  color: var(--text-color);
+}
+
+.areaFields {
+  /* background-color: aquamarine; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.areaField {
+  color: var(--text-color-green);
+  background: var(--background);
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 8px;
+  font-weight: 600;
+}
