@@ -1,0 +1,39 @@
+.fundResearchContainer {
+  background-color: var(--primaryColor);
+  padding: 80px 20px;
+}
+
+.fundResearchTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--color-white-3);
+
+  margin-bottom: 8px;
+}
+
+.fundResearchText {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-white-3);
+  text-align: center;
+
+  margin-bottom: 56px;
+}
+
+.fundResearchLink {
+  display: block;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--primaryColor);
+  background-color: var(--background);
+
+  width: fit-content;
+
+  margin: 0 auto;
+
+  border-radius: 16px;
+}

@@ -1,5 +1,6 @@
 import AreaOfSpecialization from "@/component/AreaOfSpecialization";
 import ArticleSection from "@/component/ArticleSection";
+import FundResearch from "@/component/FundResearch";
 import Hero from "@/component/Hero";
 import { Inter } from "next/font/google";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <AreaOfSpecialization />
       <ArticleSection />
+      <FundResearch />
       <footer></footer>
     </div>
   );
