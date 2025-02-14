@@ -95,7 +95,7 @@ const ArticleSection: React.FC = () => {
         <p className={styles.articleHeaderText}>All articles &rarr;</p>
       </header>
 
-      <main>
+      <main className={styles.articleContainer}>
         {articles.map((article, index) => (
           <div key={index} className={styles.articleCard}>
             {/* Article Header */}
