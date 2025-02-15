@@ -1,0 +1,147 @@
+.chooseUsContainer {
+  padding: 80px 20px;
+  background: url(../../../public//gradient-container.png);
+  background-size: contain;
+
+  display: grid;
+  grid-template-rows: repeat(1fr, 6);
+
+  place-items: center;
+}
+
+.chooseUsReason {
+  padding: 60px 24px;
+  background: var(--dark-background-2);
+  border-radius: 22px;
+
+  margin-bottom: 32px;
+
+  max-width: 760px;
+}
+
+.chooseUsTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--text-color);
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.chooseUsCta {
+  display: block;
+  background: var(--background-color-green);
+  padding: 14px 38px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.reasonCard {
+  background-color: var(--background);
+  padding: 49px 39px 19px 39px;
+  border-radius: 21px;
+  box-shadow: 0px 12.75px 98.06px 0px rgba(199, 199, 199, 0.25);
+
+  max-width: 425px;
+
+  margin-bottom: 32px;
+}
+
+.reasonTitle {
+  font-size: 22px;
+  line-height: 39px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.reasonText {
+  font-size: 16px;
+  line-height: 27px;
+  text-align: justify; /*Temporary*/
+}
+
+.reasonIcon {
+  margin-bottom: 31px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .chooseUsContainer {
+    padding: 100px 40px; /* Increase padding for larger screens */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 32px; /* Add gap between grid items */
+    grid-template-rows: auto; /* Reset grid rows for tablet layout */
+  }
+
+  .emptyContent {
+    display: none;
+  }
+
+  .chooseUsReason {
+    grid-column: 1 / -1; /* Span across all columns */
+    padding: 80px 40px; /* Increase padding for larger screens */
+    margin-bottom: 40px; /* Increase margin for better spacing */
+  }
+
+  .chooseUsTitle {
+    font-size: 40px; /* Larger font size for better readability */
+    line-height: 48px; /* Adjust line height for larger font */
+    margin-bottom: 80px; /* Increase margin for better spacing */
+  }
+
+  .chooseUsCta {
+    font-size: 22px; /* Slightly larger font size for better readability */
+    padding: 16px 40px; /* Increase padding for better clickability */
+  }
+
+  .reasonCard {
+    max-width: 100%; /* Allow cards to take full width of their column */
+    margin-bottom: 0; /* Remove bottom margin since gap handles spacing */
+  }
+
+  .reasonTitle {
+    font-size: 24px; /* Slightly larger font size for better readability */
+    line-height: 42px; /* Adjust line height for larger font */
+  }
+
+  .reasonText {
+    font-size: 18px; /* Slightly larger font size for better readability */
+    line-height: 30px; /* Adjust line height for larger font */
+  }
+
+  .reasonIcon {
+    margin-bottom: 40px; /* Increase margin for better spacing */
+  }
+}
+
+@media (min-width: 1280px) {
+  .chooseUsContainer {
+    grid-template-columns: repeat(3, 1fr); /* Two columns for tablets */
+    /* align-items: flex-start; */
+  }
+
+  .chooseUsReason {
+    grid-column: 1 / span 2;
+  }
+  /* .emptyContent {
+    display: block;
+  } */
+
+  .highlightedCard {
+    grid-row: 1;
+    grid-column: 3 / 4;
+  }
+
+  .chooseUsTitle {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .chooseUsCta {
+    font-size: 20px;
+  }
+}

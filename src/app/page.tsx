@@ -1,5 +1,6 @@
 import AreaOfSpecialization from "@/component/AreaOfSpecialization";
 import ArticleSection from "@/component/ArticleSection";
+import ChooseUs from "@/component/ChooseUs/ChooseUs";
 import FundResearch from "@/component/FundResearch";
 import Hero from "@/component/Hero";
 import { Inter } from "next/font/google";
@@ -19,6 +20,7 @@ export default function Home() {
         ctaText="Fund a research"
         ctaLink="#"
       />
+      <ChooseUs />
       <footer></footer>
     </div>
   );
