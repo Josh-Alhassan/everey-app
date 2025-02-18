@@ -11,6 +11,7 @@
 :root {
   --background: #ffffff;
   --text-color: rgba(255, 255, 255, 1);
+  --text-color-alt: rgba(208, 208, 208, 1);
   --color-white-3: rgba(230, 242, 236, 1);
 
   --foreground: #606060;

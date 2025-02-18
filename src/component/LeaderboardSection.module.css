@@ -1,0 +1,144 @@
+.leaderboardSection {
+  background: var(--background-color-green);
+  padding: 80px 20px;
+}
+
+.leaderboardHeading {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.leaderboardText {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 14px;
+  padding: 0 30px;
+
+  margin-bottom: 40px;
+}
+
+.leaderboardCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaderboardCard {
+  max-width: 353px;
+}
+
+.leaderboardCard:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.leaderboardImg {
+  width: 100%;
+  height: 353px;
+  border-radius: 13px;
+  margin-bottom: 30px;
+
+  object-fit: cover;
+  object-position: left;
+}
+
+.leaderboardCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leaderboardTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.leaderboardLabel {
+  color: var(--text-color-alt);
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.leaderboardVector {
+  display: flex;
+  gap: 6px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .leaderboardSection {
+    padding: 100px 40px; /* Increase padding for larger screens */
+  }
+
+  .leaderboardHeading {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .leaderboardText {
+    font-size: 16px;
+    padding: 0 60px;
+    margin-bottom: 60px;
+  }
+
+  .leaderboardCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .leaderboardTitle {
+    font-size: 18px;
+  }
+
+  .leaderboardLabel {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .leaderboardVector img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Styles for Laptops (min-width: 768px) */
+@media (min-width: 1024px) {
+  .leaderboardSection {
+    padding: 80px 120px;
+  }
+  .leaderboardHeading {
+    font-size: 40px;
+  }
+
+  .leaderboardText {
+    font-size: 20px;
+    padding: 0 193px;
+  }
+
+  .leaderboardCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .leaderboardTitle {
+    font-size: 24px;
+  }
+
+  .leaderboardLabel {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
+}
