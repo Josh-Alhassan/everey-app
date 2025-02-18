@@ -1,0 +1,70 @@
+.leaderboardSection {
+  background: var(--background-color-green);
+  padding: 80px 20px;
+}
+
+.leaderboardHeading {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.leaderboardText {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 14px;
+  padding: 0 30px;
+
+  margin-bottom: 40px;
+}
+
+.leaderboardCards {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.leaderboardCard {
+  /* background: greenyellow; */
+  max-width: 353px;
+}
+
+.leaderboardCard:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.leaderboardImg {
+  width: 100%;
+  height: auto;
+  border-radius: 13px;
+  margin-bottom: 30px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.leaderboardCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leaderboardTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.leaderboardLabel {
+  color: var(--text-color-alt);
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.leaderboardVector {
+  display: flex;
+  gap: 6px;
+}

@@ -3,6 +3,7 @@ import ArticleSection from "@/component/ArticleSection";
 import ChooseUs from "@/component/ChooseUs/ChooseUs";
 import FundResearch from "@/component/FundResearch";
 import Hero from "@/component/Hero";
+import LeaderboardSection from "@/component/LeaderboardSection";
 import { Inter } from "next/font/google";
 
 // Load the Inter font with specific weights and subsets
@@ -21,6 +22,7 @@ export default function Home() {
         ctaLink="#"
       />
       <ChooseUs />
+      <LeaderboardSection />
       <footer></footer>
     </div>
   );
