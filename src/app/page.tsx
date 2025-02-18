@@ -1,10 +1,10 @@
-import AreaOfSpecialization from "@/component/AreaOfSpecialization";
-import ArticleSection from "@/component/ArticleSection";
+import AreaOfSpecialization from "@/component/AreaOfSpecialization/AreaOfSpecialization";
+import ArticleSection from "@/component/Article/ArticleSection";
 import ChooseUs from "@/component/ChooseUs/ChooseUs";
-import FundResearch from "@/component/FundResearch";
-import Hero from "@/component/Hero";
-import LeaderboardSection from "@/component/LeaderboardSection";
-import TopUniversitiesSection from "@/component/TopUniversitiesSection";
+import FundResearch from "@/component/FundResearch/FundResearch";
+import Hero from "@/component/Hero/Hero";
+import LeaderboardSection from "@/component/Leaderboard/LeaderboardSection";
+import TopUniversitiesSection from "@/component/TopUniversities/TopUniversitiesSection";
 import { Inter } from "next/font/google";
 
 // Load the Inter font with specific weights and subsets

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import heroImage from "../../public/heroImage.png";
+import heroImage from "../../../public/heroImage.png";
 import { StaticImageData } from "next/image";
 
 // Defined TypeScript interfaces for content
