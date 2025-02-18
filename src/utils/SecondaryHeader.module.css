@@ -1,0 +1,26 @@
+.secondaryHeader {
+  text-align: center;
+  margin-bottom: 72px;
+  /* padding: 40px 20px;
+  color: var(--dark-background-2); */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-background-2);
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-color-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+}
