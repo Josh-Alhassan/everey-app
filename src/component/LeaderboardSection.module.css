@@ -70,6 +70,42 @@
 
 /* Styles for tablets (min-width: 768px) */
 @media (min-width: 768px) {
+  .leaderboardSection {
+    padding: 100px 40px; /* Increase padding for larger screens */
+  }
+
+  .leaderboardHeading {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .leaderboardText {
+    font-size: 16px;
+    padding: 0 60px;
+    margin-bottom: 60px;
+  }
+
+  .leaderboardCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .leaderboardTitle {
+    font-size: 18px;
+  }
+
+  .leaderboardLabel {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .leaderboardVector img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* Styles for Laptops (min-width: 768px) */
