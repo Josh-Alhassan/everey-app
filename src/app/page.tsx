@@ -4,6 +4,7 @@ import ChooseUs from "@/component/ChooseUs/ChooseUs";
 import FundResearch from "@/component/FundResearch";
 import Hero from "@/component/Hero";
 import LeaderboardSection from "@/component/LeaderboardSection";
+import TopUniversitiesSection from "@/component/TopUniversitiesSection";
 import { Inter } from "next/font/google";
 
 // Load the Inter font with specific weights and subsets
@@ -23,6 +24,7 @@ export default function Home() {
       />
       <ChooseUs />
       <LeaderboardSection />
+      <TopUniversitiesSection />
       <footer></footer>
     </div>
   );

@@ -1,0 +1,49 @@
+.topUniversitiesSection {
+  padding: 80px 20px;
+  /* background: orange; */
+}
+
+.topUniversities {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topUniversities:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.topUniversityImg {
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 16px;
+}
+
+.topUniversitiesLabel {
+  /* display: inline-block; */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+@media (min-width: 768px) {
+  .topUniversitiesSection {
+    padding: 80px;
+  }
+  .topUniversityImg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .topUniversitiesLabel {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .topUniversitiesSection {
+    padding: 120px 80px;
+  }
+}
