@@ -14,11 +14,13 @@ interface LeaderboardCardProps {
 const LeaderboardCard: React.FC<LeaderboardCardProps> = ({ card }) => {
   return (
     <div className={styles.leaderboardCard}>
-      <Image
-        src={card.image}
-        alt={card.alt}
-        className={styles.leaderboardImg}
-      />
+      <div className={styles.leaderboardImgContainer}>
+        <Image
+          src={card.image}
+          alt={card.alt}
+          className={styles.leaderboardImg}
+        />
+      </div>
       <div className={styles.leaderboardCardBody}>
         <h4 className={styles.leaderboardTitle}>{card.name}</h4>
         <p className={styles.leaderboardLabel}>{card.affiliation}</p>

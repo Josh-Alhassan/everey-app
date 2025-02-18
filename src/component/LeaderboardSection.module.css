@@ -23,12 +23,11 @@
 .leaderboardCards {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  align-items: center;
+  justify-content: center;
 }
 
 .leaderboardCard {
-  /* background: greenyellow; */
   max-width: 353px;
 }
 
@@ -38,12 +37,12 @@
 
 .leaderboardImg {
   width: 100%;
-  height: auto;
+  height: 353px;
   border-radius: 13px;
   margin-bottom: 30px;
 
   object-fit: cover;
-  object-position: center;
+  object-position: left;
 }
 
 .leaderboardCardBody {
@@ -67,4 +66,43 @@
 .leaderboardVector {
   display: flex;
   gap: 6px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+}
+
+/* Styles for Laptops (min-width: 768px) */
+@media (min-width: 1024px) {
+  .leaderboardSection {
+    padding: 80px 120px;
+  }
+  .leaderboardHeading {
+    font-size: 40px;
+  }
+
+  .leaderboardText {
+    font-size: 20px;
+    padding: 0 193px;
+  }
+
+  .leaderboardCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .leaderboardTitle {
+    font-size: 24px;
+  }
+
+  .leaderboardLabel {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
 }
