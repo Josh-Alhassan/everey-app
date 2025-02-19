@@ -9,8 +9,10 @@ interface SubscribeProps {
 const Subscribe: React.FC<SubscribeProps> = ({ header, text }) => {
   return (
     <header className={styles.footerSubscribe}>
-      <h2 className={styles.footerSubscribeHeader}>{header}</h2>
-      <p className={styles.footerSubscribeText}>{text}</p>
+      <div>
+        <h2 className={styles.footerSubscribeHeader}>{header}</h2>
+        <p className={styles.footerSubscribeText}>{text}</p>
+      </div>
 
       <div className={styles.footerSubscribeInputField}>
         <input

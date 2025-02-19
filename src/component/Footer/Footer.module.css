@@ -11,6 +11,12 @@
   /* height: 50px; */
 }
 
+.footerSubscribe {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 0.5px solid rgba(176, 176, 176, 0.8);
+}
+
 .footerSubscribeHeader {
   font-weight: 700;
   font-size: 16px;
@@ -29,9 +35,9 @@
   align-items: center;
   gap: 10px;
 
-  padding-top: 32px;
+  /* padding-top: 32px;
   padding-bottom: 32px;
-  border-bottom: 0.5px solid rgba(176, 176, 176, 0.8);
+  border-bottom: 0.5px solid rgba(176, 176, 176, 0.8); */
 }
 
 .subscribeInput {
@@ -82,40 +88,38 @@
 /* Styles for tablets (min-width: 768px) */
 @media (min-width: 768px) {
   .footerContainer {
-    padding: 100px 40px; /* Increase padding for larger screens */
-    /* flex-direction: row; */
+    padding: 100px 40px;
   }
 
   .footerSubscribeHeader {
-    font-size: 20px; /* Larger font size for better readability */
-    line-height: 24px; /* Adjust line height for larger font */
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .footerSubscribeText {
-    font-size: 32px; /* Larger font size for better readability */
-    line-height: 38px; /* Adjust line height for larger font */
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .footerSubscribeInputField {
-    justify-content: center; /* Center the input and button */
-    padding-top: 40px; /* Increase padding for better spacing */
-    padding-bottom: 40px; /* Increase padding for better spacing */
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .subscribeInput {
-    font-size: 12px; /* Slightly larger font size for better readability */
-    width: 300px; /* Increase input width for better usability */
+    font-size: 12px;
+    width: 300px;
   }
 
   .subscribeButton {
-    font-size: 14px; /* Slightly larger font size for better readability */
-    padding: 12px 28px; /* Increase padding for better clickability */
+    font-size: 14px;
+    padding: 12px 28px;
   }
 
   .footerNavigation {
-    flex-direction: column; /* Switch to a row layout for tablets */
-    justify-content: space-between; /* Space out navigation sections */
-    gap: 40px; /* Increase gap between sections */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
   }
 
   .footerLogo {
@@ -123,21 +127,75 @@
   }
 
   .footerNavigationText {
-    font-size: 20px; /* Slightly larger font size for better readability */
-    line-height: 30px; /* Adjust line height for larger font */
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .footerRoutes {
-    grid-template-columns: repeat(4, 1fr); /* Four columns for tablets */
-    gap: 24px; /* Increase gap between items */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     font-size: 16px;
   }
 
   .footerSocials {
-    gap: 30px; /* Increase gap between social icons */
+    gap: 30px;
   }
 
   .footerSocialLogo {
     width: 40px;
+  }
+}
+
+/* Styles for Laptop screen (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .footerContainer {
+    padding: 100px 80px;
+  }
+  .footerSubscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerSubscribeHeader {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  .footerSubscribeText {
+    font-size: 28px;
+  }
+
+  .footerLogo {
+    width: 178px;
+    margin-bottom: 30px;
+  }
+
+  .footerNavigation {
+    padding-top: 72px;
+
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .footerNavigationText {
+    max-width: 300px;
+    /* text-align: justify; */
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footerContainer {
+    padding: 100px 120px;
+  }
+
+  .footerLink {
+    font-size: 20px;
+  }
+
+  .footerNavigationText {
+    font-size: 20px;
   }
 }

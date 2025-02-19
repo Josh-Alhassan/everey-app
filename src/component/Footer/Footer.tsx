@@ -63,11 +63,13 @@ const Footer: React.FC = () => {
 
       {/* Navigation Section */}
       <div className={styles.footerNavigation}>
-        <Image src={logo} alt="Everey" className={styles.footerLogo} />
-        <p className={styles.footerNavigationText}>
-          We're dedicated to promoting indigenous research, leveraging local
-          expertise for impactful global publishing.
-        </p>
+        <div>
+          <Image src={logo} alt="Everey" className={styles.footerLogo} />
+          <p className={styles.footerNavigationText}>
+            We're dedicated to promoting indigenous research, leveraging local
+            expertise for impactful global publishing.
+          </p>
+        </div>
 
         {/* Footer Routes */}
         <div className={styles.footerRoutes}>
