@@ -9,7 +9,7 @@ interface SubscribeProps {
 const Subscribe: React.FC<SubscribeProps> = ({ header, text }) => {
   return (
     <header className={styles.footerSubscribe}>
-      <div>
+      <div style={{ marginBottom: "15px" }}>
         <h2 className={styles.footerSubscribeHeader}>{header}</h2>
         <p className={styles.footerSubscribeText}>{text}</p>
       </div>
