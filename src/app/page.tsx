@@ -1,6 +1,7 @@
 import AreaOfSpecialization from "@/component/AreaOfSpecialization/AreaOfSpecialization";
 import ArticleSection from "@/component/Article/ArticleSection";
 import ChooseUs from "@/component/ChooseUs/ChooseUs";
+import Footer from "@/component/Footer/Footer";
 import FundResearch from "@/component/FundResearch/FundResearch";
 import Hero from "@/component/Hero/Hero";
 import LeaderboardSection from "@/component/Leaderboard/LeaderboardSection";
@@ -25,7 +26,7 @@ export default function Home() {
       <ChooseUs />
       <LeaderboardSection />
       <TopUniversitiesSection />
-      <footer></footer>
+      <Footer />
     </div>
   );
 }

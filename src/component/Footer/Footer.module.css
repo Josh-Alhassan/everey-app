@@ -1,0 +1,201 @@
+.footerContainer {
+  background-color: var(--background-color-green);
+  padding: 80px 20px;
+  clip-path: ellipse(150% 100% at 50% 100%);
+
+  color: var(--text-color);
+}
+
+.footerLogo {
+  width: 178px;
+  /* height: 50px; */
+}
+
+.footerSubscribe {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 0.5px solid rgba(176, 176, 176, 0.8);
+}
+
+.footerSubscribeHeader {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.footerSubscribeText {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.footerSubscribeInputField {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  /* padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 0.5px solid rgba(176, 176, 176, 0.8); */
+}
+
+.subscribeInput {
+  box-shadow: 0px 2.09px 2.09px 0px rgba(0, 0, 0, 0.25);
+  border: 0.52px solid rgba(108, 102, 102, 0.29);
+
+  border-radius: 5px;
+  padding: 14px 8px;
+  font-size: 8px;
+  width: 230px;
+}
+
+.subscribeButton {
+  padding: 10px 24px;
+  border-radius: 5px;
+  color: var(--background-color-green);
+  background-color: var(--background);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footerNavigation {
+  padding-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footerNavigationText {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--secondaryBackground);
+}
+
+.footerRoutes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: auto;
+  row-gap: 20px;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 30px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .footerContainer {
+    padding: 100px 40px;
+  }
+
+  .footerSubscribeHeader {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footerSubscribeText {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .footerSubscribeInputField {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .subscribeInput {
+    font-size: 12px;
+    width: 300px;
+  }
+
+  .subscribeButton {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .footerNavigation {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footerLogo {
+    width: 300px;
+  }
+
+  .footerNavigationText {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .footerRoutes {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    font-size: 16px;
+  }
+
+  .footerSocials {
+    gap: 30px;
+  }
+
+  .footerSocialLogo {
+    width: 40px;
+  }
+}
+
+/* Styles for Laptop screen (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .footerContainer {
+    padding: 100px 80px;
+  }
+  .footerSubscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerSubscribeHeader {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  .footerSubscribeText {
+    font-size: 28px;
+  }
+
+  .footerLogo {
+    width: 178px;
+    margin-bottom: 30px;
+  }
+
+  .footerNavigation {
+    padding-top: 72px;
+
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .footerNavigationText {
+    max-width: 300px;
+    /* text-align: justify; */
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footerContainer {
+    padding: 100px 120px;
+  }
+
+  .footerLink {
+    font-size: 20px;
+  }
+
+  .footerNavigationText {
+    font-size: 20px;
+  }
+}
