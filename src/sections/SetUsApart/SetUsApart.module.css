@@ -1,10 +1,13 @@
 .container {
   padding: 50px 20px;
+  background: url("../../../public/gradient-container.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .cards {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 425px;
 }
 
 @media (min-width: 768px) {
