@@ -9,9 +9,11 @@ const SetUsApart = () => {
   return (
     <section className={setusApartStyles.container}>
       <SecondaryHeader title="What Sets Us Apart" />
-      {setUsApart.map((card, index) => (
-        <ReasonCard key={index} {...card} />
-      ))}
+      <div className={setusApartStyles.cards}>
+        {setUsApart.map((card, index) => (
+          <ReasonCard key={index} {...card} />
+        ))}
+      </div>
     </section>
   );
 };
