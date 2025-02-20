@@ -5,8 +5,10 @@
 }
 
 .statementContainer {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  /* grid-template-rows: 1fr; */
+  justify-content: space-between;
+  align-items: center;
   max-width: 393px;
 
   /* grid-template-columns: repeat(auto-fit, minmax(393px, 1fr)); */
@@ -50,6 +52,7 @@
 
   .article {
     text-align: justify;
+    max-width: 580px;
   }
 
   .title {
@@ -62,12 +65,8 @@
     line-height: 22px;
   }
 
-  .article1 {
-    order: 1;
-  }
-
-  .statement1 {
-    order: 0;
+  .statementContainer.reverse {
+    flex-direction: row-reverse;
   }
 
   .statementImg {
@@ -83,12 +82,26 @@
     column-gap: 60px;
   }
   .title {
-    font-size: 48px;
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 33px;
+    text-align: left;
+  }
+
+  .statementImg {
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 42px;
   }
 
   .description {
     font-size: 24px;
-    line-height: 33px;
-    text-align: left;
   }
 }
