@@ -78,3 +78,30 @@ export const leaderboardData: LeaderboardCardData[] = [
     affiliation: "Harvard University - Dept. of Medicine",
   },
 ];
+
+export const setUsApart = [
+  {
+    id: 1,
+    icon: profileIcon,
+    alt: "Community",
+    title: "Community",
+    description:
+      "    Join a thriving research community. Collaborate with over 300 institutions to advance African research.",
+  },
+  {
+    id: 2,
+    icon: academicIcon,
+    alt: "Data Driven",
+    title: "Data Driven",
+    description:
+      "Make data-driven decisions. Uncover research trends and measure your impact.",
+  },
+  {
+    id: 3,
+    icon: institutionIcon,
+    alt: "Support",
+    title: "Support",
+    description:
+      "Fuel your research with the funding you need. Turn your ideas into reality.",
+  },
+];

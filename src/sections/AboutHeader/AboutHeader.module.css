@@ -1,0 +1,70 @@
+.aboutHeader {
+  background: url("../../../public/about-us-bkg.png");
+  background-position: center;
+  background-size: cover;
+  padding: 52px 24px;
+
+  text-align: center;
+
+  color: var(--text-color);
+}
+
+.aboutTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  margin-bottom: 16px;
+}
+
+.aboutTitleSpan {
+  color: var(--primaryColor);
+}
+
+.aboutDescription {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 600;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .aboutHeader {
+    padding: 80px 40px; /* Increase padding for larger screens */
+  }
+
+  .aboutTitle {
+    font-size: 32px; /* Larger font size for better readability */
+    line-height: 38px; /* Adjust line height for larger font */
+    margin-bottom: 24px; /* Increase margin for better spacing */
+  }
+
+  .aboutDescription {
+    font-size: 16px; /* Slightly larger font size for better readability */
+    line-height: 20px; /* Adjust line height for larger font */
+    margin: 0 auto; /* Center the description */
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutHeader {
+    padding: 100px 40px;
+  }
+  .aboutTitle {
+    font-size: 64px;
+    line-height: 78px;
+  }
+
+  .aboutDescription {
+    font-size: 33px;
+    line-height: 49px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .aboutHeader {
+    padding: 133px 152px;
+  }
+}
+
+/* 133px 152px */
