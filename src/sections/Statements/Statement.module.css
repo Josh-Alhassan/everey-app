@@ -1,11 +1,13 @@
 .container {
   padding: 80px 20px;
+  padding-top: 20px;
   display: grid;
   row-gap: 80px;
 }
 
 .statementContainer {
   display: flex;
+  flex-direction: column;
   /* grid-template-rows: 1fr; */
   justify-content: space-between;
   align-items: center;
@@ -45,9 +47,7 @@
 
   .statementContainer {
     max-width: 100%;
-    grid-template-columns: 47% 47%;
     column-gap: 50px;
-    height: fit-content;
   }
 
   .article {

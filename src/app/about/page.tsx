@@ -2,6 +2,7 @@ import React from "react";
 import AboutHeader from "@/sections/AboutHeader/AboutHeader";
 import SetUsApart from "@/sections/SetUsApart/SetUsApart";
 import Statement from "@/sections/Statements/Statement";
+import SuccessNumbers from "@/sections/SectionNumbers/SuccessNumbers";
 
 const AboutPage: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const AboutPage: React.FC = () => {
       <AboutHeader />
       <SetUsApart />
       <Statement />
+      <SuccessNumbers />
     </>
   );
 };

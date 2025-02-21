@@ -24,6 +24,7 @@ const Statement: React.FC = () => {
         description="To unite African academic institutions, foster cross-institution collaboration, and empower researchers by providing essential tools, resources, and funding to drive impactful research and innovation."
         imageSrc={missionImg}
         imageAlt="Mission Photo"
+        reverse
       />
     </section>
   );

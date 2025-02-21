@@ -1,0 +1,119 @@
+.container {
+  padding: 80px 20px;
+  /* background-color: orange; */
+}
+
+.wrapper {
+  background: var(--primaryColor);
+  padding: 78px 47px;
+  border-radius: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: var(--text-color);
+
+  /* margin-bottom: 64px; */
+}
+
+.successNumbers {
+  /* background-color: greenyellow; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.numberCard {
+  color: var(--text-color);
+  padding-bottom: 72px;
+  padding-top: 72px;
+  text-align: center;
+}
+
+.successText:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.numberTitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+
+  margin-bottom: 10px;
+}
+
+.successText {
+  font-size: 14px;
+}
+
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+  .container {
+    padding: 100px 40px;
+  }
+
+  .wrapper {
+    padding: 100px 60px;
+  }
+
+  .title {
+    font-size: 38px;
+    line-height: 38px;
+    margin-bottom: 80px;
+  }
+
+  .numberTitle {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .successText {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 120px 100px;
+  }
+  .successNumbers {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .numberCard {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .successText:not(:last-child) {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    padding: 80px 100px;
+  }
+  .title {
+    font-size: 40px;
+    font-weight: 600px;
+    line-height: 48px;
+  }
+
+  .numberTitle {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+
+  .successText {
+    font-size: 24px;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
