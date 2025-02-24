@@ -34,13 +34,13 @@
   }
 
   .aboutTitle {
-    font-size: 32px; /* Larger font size for better readability */
+    font-size: 48px; /* Larger font size for better readability */
     line-height: 38px; /* Adjust line height for larger font */
     margin-bottom: 24px; /* Increase margin for better spacing */
   }
 
   .aboutDescription {
-    font-size: 16px; /* Slightly larger font size for better readability */
+    font-size: 20px; /* Slightly larger font size for better readability */
     line-height: 20px; /* Adjust line height for larger font */
     margin: 0 auto; /* Center the description */
   }
@@ -48,8 +48,15 @@
 
 @media (min-width: 1024px) {
   .aboutHeader {
-    padding: 100px 40px;
+    padding: 100px 80px;
   }
+
+  .aboutDescription {
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
   .aboutTitle {
     font-size: 64px;
     line-height: 78px;
@@ -57,11 +64,7 @@
 
   .aboutDescription {
     font-size: 33px;
-    line-height: 49px;
   }
-}
-
-@media (min-width: 1280px) {
   .aboutHeader {
     padding: 133px 152px;
   }

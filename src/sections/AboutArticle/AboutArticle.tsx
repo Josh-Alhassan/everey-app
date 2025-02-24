@@ -1,9 +1,7 @@
 import React from "react";
-import styles from "./ArticleSection.module.css";
-import Image from "next/image";
-import thumbnail from "../../public/thumbnail.png";
-import authorImg from "../../public/articleAuthor.jpg";
-import ArticleCard from "./ArticleCard";
+
+import styles from "../../component/Article/ArticleSection.module.css";
+import ArticleCard from "@/component/Article/ArticleCard";
 
 interface Article {
   thumbnail: string; // Path to the thumbnail image
@@ -44,55 +42,20 @@ const articles: Article[] = [
     thumbnail: "/thumbnail.png",
     label: "Technology",
     authorImg: "/articleAuthor.jpg",
-    authorName: "Jane Doe",
+    authorName: "Juliette Romeo",
     date: "Feb 15, 2023 • 8 min read",
-    title: "The Future of Artificial Intelligence",
+    title: "Artificial Intelligence",
     preview:
-      "Discover how AI is transforming industries and what the future holds for this groundbreaking technology.",
-    readMoreLink: "#",
-  },
-
-  {
-    thumbnail: "/thumbnail.png",
-    label: "Technology",
-    authorImg: "/articleAuthor.jpg",
-    authorName: "Jane Doe",
-    date: "Feb 15, 2023 • 8 min read",
-    title: "The Future of Artificial Intelligence",
-    preview:
-      "Discover how AI is transforming industries and what the future holds for this groundbreaking technology.",
-    readMoreLink: "#",
-  },
-  {
-    thumbnail: "/thumbnail.png",
-    label: "Technology",
-    authorImg: "/articleAuthor.jpg",
-    authorName: "Jane Doe",
-    date: "Feb 15, 2023 • 8 min read",
-    title: "The Future of Artificial Intelligence",
-    preview:
-      "Discover how AI is transforming industries and what the future holds for this groundbreaking technology.",
-    readMoreLink: "#",
-  },
-
-  {
-    thumbnail: "/thumbnail.png",
-    label: "Technology",
-    authorImg: "/articleAuthor.jpg",
-    authorName: "Jane Doe",
-    date: "Feb 15, 2023 • 8 min read",
-    title: "The Future of Artificial Intelligence",
-    preview:
-      "Discover how AI is transforming industries and what the future holds for this groundbreaking technology.",
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus rem nulla est itaque sint totam voluptatem illo voluptas sunt saepe odit, dolorum libero, quod aperiam quibusdam nostrum minima laborum? dolorum libero, quod aperiam quibusdam nostrum minima laborum.",
     readMoreLink: "#",
   },
 ];
 
-const ArticleSection: React.FC = () => {
+const AboutArticle: React.FC = () => {
   return (
     <section className={styles.articleSection}>
       <header className={styles.articleHeader}>
-        <h3 className={styles.articleHeaderTitle}>Read an Article</h3>
+        <h3 className={styles.articleHeaderTitle}>Latest News</h3>
         <p className={styles.articleHeaderText}>All articles &rarr;</p>
       </header>
 
@@ -105,4 +68,4 @@ const ArticleSection: React.FC = () => {
   );
 };
 
-export default ArticleSection;
+export default AboutArticle;
