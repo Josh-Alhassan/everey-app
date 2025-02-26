@@ -49,7 +49,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 50px; */
   border-radius: 50px;
 
   cursor: pointer;
@@ -96,6 +95,5 @@
 @media (min-width: 1280px) {
   .container {
     width: 40%;
-    /* margin-bottom: 30px; -- temporal */
   }
 }

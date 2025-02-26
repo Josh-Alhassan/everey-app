@@ -1,5 +1,4 @@
 .formContainer {
-  /* background-color: yellowgreen; */
   padding: 53px 20px;
 }
 
@@ -101,10 +100,6 @@
     padding-top: 30;
   }
 
-  /* .inputFields {
-    background-color: #ff0000;
-  } */
-
   .inputLabel,
   .inputfield {
     font-size: 18px;
@@ -131,13 +126,11 @@
   .formContainer {
     padding: 80px 50px;
     width: 60%;
-    /* margin-bottom: 30px; -- temporal */
   }
 
   .formSection {
     display: flex;
     flex-direction: row-reverse;
-    /* justify-content: space-between; */
   }
 
   .inputLabel,
@@ -165,6 +158,5 @@
 @media (min-width: 1280px) {
   .formContainer {
     width: 60%;
-    /* margin-bottom: 30px; -- temporal */
   }
 }
