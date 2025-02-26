@@ -20,15 +20,21 @@
   --background-color-green: rgba(11, 143, 80, 1);
   --secondaryGrey: #222222;
   --color-green-3: rgba(66, 161, 115, 1);
+  --color-green-4: rgba(90, 165, 129, 1);
+  --color-green-4-alt: rgba(90, 165, 129, 0.5);
 
   --secondaryBackground: rgba(231, 244, 238, 1);
   --tertiary-background: rgba(247, 249, 249, 1);
   --dark-background: rgba(0, 3, 19, 1);
   --dark-background-2: rgba(0, 0, 0, 1);
   --alt-text: rgba(43, 43, 61, 1);
+
   --color-text-2: rgba(81, 81, 81, 1);
   --color-grey-2: rgba(66, 84, 102, 1);
   --color-grey-3: rgba(39, 39, 46, 1);
+  --color-grey-4: rgba(126, 126, 126, 1);
+
+  --color-black-2: rgba(1, 28, 42, 1);
 }
 
 body {

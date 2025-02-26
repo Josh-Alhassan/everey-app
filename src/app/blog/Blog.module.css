@@ -1,0 +1,118 @@
+.blogHeader {
+  padding: 125px 20px;
+  background-image: url("../../../public/blog-background.png");
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+}
+
+.blogTitle {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 16px;
+}
+
+.blogInput {
+  width: 100%;
+  border-radius: 63px;
+  font-family: Inter;
+  font-weight: 400;
+  /* font-size: 10.19px; */
+  line-height: 12.74px;
+
+  padding: 7px 12px;
+}
+
+.noResults {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.paginationButton {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginationButton:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.paginationInfo {
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .blogTitle {
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+  }
+  .blogInput {
+    font-size: 12px;
+
+    padding: 15px 25px;
+    width: 80%;
+  }
+
+  .blogHeader {
+    padding: 125px 100px;
+  }
+  .blogContainer {
+    padding: 100px 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blogHeader {
+    padding: 174px 100px;
+  }
+  .blogTitle {
+    font-size: 42px;
+  }
+
+  .blogInput {
+    font-size: 18px;
+    width: 60%;
+
+    padding: 20px 30px;
+  }
+
+  .blogInput::placeholder {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blogTitle {
+    font-size: 67px;
+  }
+
+  .blogInput {
+    width: 50%;
+  }
+}
