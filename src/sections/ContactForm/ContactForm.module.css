@@ -1,5 +1,6 @@
 .formContainer {
   padding: 53px 20px;
+  padding-top: 0;
 }
 
 .formfield {
@@ -84,12 +85,9 @@
   background-color: var(--primaryColor);
   color: var(--text-color);
   border-radius: 16px;
-
   margin-top: 40px;
-
   display: flex;
   justify-self: flex-end;
-
   font-size: 20px;
   font-weight: 700;
 }
@@ -131,6 +129,8 @@
   .formSection {
     display: flex;
     flex-direction: row-reverse;
+
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
   }
 
   .inputLabel,
