@@ -5,6 +5,8 @@ import styleForm from "./ContactForm.module.css";
 import FormField from "@/utils/FormField/FormField";
 import SubjectInput from "@/utils/SubjectInput/SubjectInput";
 
+import ContactInfo from "@/sections/ContactInfo/ContactInfo";
+
 interface FormState {
   firstName: string;
   lastName: string;
@@ -85,106 +87,110 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form className={styleForm.formContainer} onSubmit={handleSubmit}>
-      {/* Reusable FormField for Input Fields */}
-      <div className={styleForm.inputFields}>
-        <FormField
-          label="First Name"
-          id="firstName"
-          name="firstName"
-          placeholder="Enter your first name"
-          value={formState.firstName}
-          onChange={handleInputChange}
-          error={errors.firstName}
-          required
-        />
-
-        <FormField
-          label="Last Name"
-          id="lastName"
-          name="lastName"
-          placeholder="Enter your last name"
-          value={formState.lastName}
-          onChange={handleInputChange}
-          error={errors.lastName}
-          required
-        />
-
-        <FormField
-          label="Email"
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Enter your email"
-          value={formState.email}
-          onChange={handleInputChange}
-          error={errors.email}
-          required
-        />
-
-        <FormField
-          label="Phone Number"
-          id="phoneNumber"
-          name="phoneNumber"
-          placeholder="+234 012 3456 789"
-          value={formState.phoneNumber}
-          onChange={handleInputChange}
-          error={errors.phoneNumber}
-          required
-        />
-      </div>
-
-      {/* Reusable SubjectInput for Subject Selection */}
-      <fieldset className={styleForm.subjectContainer}>
-        <legend className={styleForm.subjectTitle}>Select Subject?</legend>
-        <div className={styleForm.subjectWrapper}>
-          <SubjectInput
-            id="generalInquiry"
-            name="subject"
-            value="General Inquiry"
-            label="General Inquiry"
-            checked={formState.subject === "General Inquiry"}
-            onChange={handleCheckboxChange}
+    <>
+      <form className={styleForm.formContainer} onSubmit={handleSubmit}>
+        {/* Reusable FormField for Input Fields */}
+        <div className={styleForm.inputFields}>
+          <FormField
+            label="First Name"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+            value={formState.firstName}
+            onChange={handleInputChange}
+            error={errors.firstName}
+            required
           />
-          <SubjectInput
-            id="support"
-            name="subject"
-            value="Support"
-            label="Support"
-            checked={formState.subject === "Support"}
-            onChange={handleCheckboxChange}
+
+          <FormField
+            label="Last Name"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter your last name"
+            value={formState.lastName}
+            onChange={handleInputChange}
+            error={errors.lastName}
+            required
           />
-          {/* Add more SubjectInput components as needed */}
+
+          <FormField
+            label="Email"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            value={formState.email}
+            onChange={handleInputChange}
+            error={errors.email}
+            required
+          />
+
+          <FormField
+            label="Phone Number"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="+234 012 3456 789"
+            value={formState.phoneNumber}
+            onChange={handleInputChange}
+            error={errors.phoneNumber}
+            required
+          />
         </div>
-      </fieldset>
 
-      {/* Textarea for Message */}
-      <div className={styleForm.messageContainer}>
-        <label htmlFor="message" className={styleForm.messageLabel}>
-          Message:
-        </label>
-        <textarea
-          className={styleForm.textarea}
-          id="message"
-          name="message"
-          rows={5}
-          value={formState.message}
-          onChange={handleInputChange}
-          aria-invalid={!!errors.message}
-          aria-describedby="messageError"
-        />
-        {errors.message && (
-          <span id="messageError" className={styleForm.errorMessage}>
-            {errors.message}
-          </span>
-        )}
-      </div>
+        {/* Reusable SubjectInput for Subject Selection */}
+        <fieldset className={styleForm.subjectContainer}>
+          <legend className={styleForm.subjectTitle}>Select Subject?</legend>
+          <div className={styleForm.subjectWrapper}>
+            <SubjectInput
+              id="generalInquiry"
+              name="subject"
+              value="General Inquiry"
+              label="General Inquiry"
+              checked={formState.subject === "General Inquiry"}
+              onChange={handleCheckboxChange}
+            />
+            <SubjectInput
+              id="support"
+              name="subject"
+              value="Support"
+              label="Support"
+              checked={formState.subject === "Support"}
+              onChange={handleCheckboxChange}
+            />
+            {/* Add more SubjectInput components as needed */}
+          </div>
+        </fieldset>
 
-      {/* Submit Button */}
-      <button type="submit" className={styleForm.submitButton}>
-        Send
-      </button>
-    </form>
+        {/* Textarea for Message */}
+        <div className={styleForm.messageContainer}>
+          <label htmlFor="message" className={styleForm.messageLabel}>
+            Message:
+          </label>
+          <textarea
+            className={styleForm.textarea}
+            id="message"
+            name="message"
+            rows={5}
+            value={formState.message}
+            onChange={handleInputChange}
+            aria-invalid={!!errors.message}
+            aria-describedby="messageError"
+          />
+          {errors.message && (
+            <span id="messageError" className={styleForm.errorMessage}>
+              {errors.message}
+            </span>
+          )}
+        </div>
+
+        {/* Submit Button */}
+        <button type="submit" className={styleForm.submitButton}>
+          Send
+        </button>
+      </form>
+
+      <ContactInfo />
+    </>
   );
 };
 
