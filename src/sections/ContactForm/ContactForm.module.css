@@ -1,0 +1,96 @@
+.formContainer {
+  /* background-color: yellowgreen; */
+  padding: 53px 20px;
+}
+
+.formfield {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputLabel,
+.inputfield {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--color-grey-4);
+}
+
+.inputfield {
+  padding: 15px;
+
+  border-radius: 8px;
+  border: 1px solid var(--color-grey-4);
+  width: 100%;
+  background: transparent;
+}
+
+.subjectContainer {
+  margin-top: 24px;
+}
+
+.subjectTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-black-2);
+
+  margin-bottom: 16px;
+}
+
+.subjectWrapper {
+  columns: 2;
+}
+
+.subjectInput {
+  margin-bottom: 20px;
+}
+
+.subjectLabel {
+  margin-left: 5px;
+}
+
+.inputfield[aria-invalid="true"] {
+  border-color: #ff0000;
+}
+
+.errorMessage {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.messageLabel {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.textarea {
+  border: 1px solid var(--color-grey-4);
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  color: var(--color-grey-4);
+}
+
+.submitButton {
+  padding: 14px 70px;
+  background-color: var(--primaryColor);
+  color: var(--text-color);
+  border-radius: 16px;
+
+  margin-top: 40px;
+
+  display: flex;
+  justify-self: flex-end;
+
+  font-size: 20px;
+  font-weight: 700;
+}
