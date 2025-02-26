@@ -58,3 +58,9 @@
 .socials a:hover {
   background: var(--color-green-4-alt);
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding: 53px;
+  }
+}

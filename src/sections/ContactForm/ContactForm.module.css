@@ -94,3 +94,35 @@
   font-size: 20px;
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .formContainer {
+    padding: 53px;
+    padding-top: 30;
+  }
+
+  /* .inputFields {
+    background-color: #ff0000;
+  } */
+
+  .inputLabel,
+  .inputfield {
+    font-size: 18px;
+  }
+
+  .inputfield {
+    padding: 18px;
+  }
+
+  .subjectTitle {
+    font-size: 20px;
+  }
+
+  .subjectWrapper {
+    font-size: 18px;
+  }
+
+  .messageContainer {
+    font-size: 18px;
+  }
+}
