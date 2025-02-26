@@ -6,11 +6,13 @@ import Footer from "@/component/Footer/Footer";
 
 const Contact = () => {
   return (
-    <section>
-      <ContactHeader />
-      <ContactForm />
+    <>
+      <section className={styleContact.contactPage}>
+        <ContactHeader />
+        <ContactForm />
+      </section>
       <Footer />
-    </section>
+    </>
   );
 };
 

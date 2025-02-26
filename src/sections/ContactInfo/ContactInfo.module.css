@@ -63,4 +63,39 @@
   .container {
     padding: 53px;
   }
+
+  .contactTitle {
+    font-size: 32px;
+  }
+
+  .contactText,
+  .contacts {
+    font-size: 16px;
+  }
+
+  .socialIcon {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 0;
+  }
+
+  .contactWrapper {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 40%;
+    /* margin-bottom: 30px; -- temporal */
+  }
 }

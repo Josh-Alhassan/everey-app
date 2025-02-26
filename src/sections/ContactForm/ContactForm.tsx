@@ -87,7 +87,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <>
+    <section className={styleForm.formSection}>
       <form className={styleForm.formContainer} onSubmit={handleSubmit}>
         {/* Reusable FormField for Input Fields */}
         <div className={styleForm.inputFields}>
@@ -190,7 +190,7 @@ const ContactForm: React.FC = () => {
       </form>
 
       <ContactInfo />
-    </>
+    </section>
   );
 };
 

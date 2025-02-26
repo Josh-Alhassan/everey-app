@@ -89,24 +89,26 @@ const ContactInfo: React.FC = () => {
         </p>
       </header>
 
-      {/* Contact Information */}
-      <main className={styleInfo.contacts}>
-        {contactItems.map((item, index) => (
-          <ContactItem key={index} icon={item.icon} text={item.text} />
-        ))}
-      </main>
+      <div className={styleInfo.contactWrapper}>
+        {/* Contact Information */}
+        <main className={styleInfo.contacts}>
+          {contactItems.map((item, index) => (
+            <ContactItem key={index} icon={item.icon} text={item.text} />
+          ))}
+        </main>
 
-      {/* Social Links */}
-      <nav className={styleInfo.socials} aria-label="Social media links">
-        {socialLinks.map((link, index) => (
-          <SocialLink
-            key={index}
-            icon={link.icon}
-            url={link.url}
-            label={link.label}
-          />
-        ))}
-      </nav>
+        {/* Social Links */}
+        <nav className={styleInfo.socials} aria-label="Social media links">
+          {socialLinks.map((link, index) => (
+            <SocialLink
+              key={index}
+              icon={link.icon}
+              url={link.url}
+              label={link.label}
+            />
+          ))}
+        </nav>
+      </div>
     </section>
   );
 };

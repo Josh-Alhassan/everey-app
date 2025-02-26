@@ -126,3 +126,45 @@
     font-size: 18px;
   }
 }
+
+@media (min-width: 1024px) {
+  .formContainer {
+    padding: 80px 50px;
+    width: 60%;
+    /* margin-bottom: 30px; -- temporal */
+  }
+
+  .formSection {
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-between; */
+  }
+
+  .inputLabel,
+  .inputfield {
+    font-size: 14px;
+  }
+
+  .inputfield {
+    padding: 14px;
+  }
+
+  .subjectTitle {
+    font-size: 18px;
+  }
+
+  .subjectWrapper {
+    font-size: 14px;
+  }
+
+  .messageContainer {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .formContainer {
+    width: 60%;
+    /* margin-bottom: 30px; -- temporal */
+  }
+}
