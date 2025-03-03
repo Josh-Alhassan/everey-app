@@ -1,0 +1,126 @@
+.researchAfrica {
+  padding: 60px 20px;
+}
+
+.researchPlans {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+}
+
+.researchPlan {
+  padding: 23px;
+  box-shadow: 0px 1.19px 5.96px 0px rgba(0, 0, 0, 0.11);
+
+  border-radius: 14px;
+
+  width: 353px;
+}
+
+.researchPlan1 {
+  width: 300px;
+}
+
+.researchImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: gray;
+
+  margin-bottom: 19px;
+}
+
+.researchPlanTitle {
+  font-weight: 700;
+  font-size: 15.67px;
+  line-height: 23.84px;
+  color: var(--dark-background-2);
+
+  margin-bottom: 10px;
+}
+
+.researchPlanText {
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.researchPlanLink {
+  display: inline-block;
+  font-weight: 700;
+  color: rgba(39, 39, 46, 1);
+
+  margin-top: 15px;
+}
+
+.researchFormWrapper,
+.researchNews,
+.researchFooter {
+  margin-top: 80px;
+}
+
+.researchForms {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.submitButton {
+  padding: 14px 70px;
+  background-color: var(--primaryColor);
+  color: var(--text-color);
+  border-radius: 16px;
+  margin-top: 40px;
+
+  display: flex;
+  justify-self: flex-end;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.researchNews {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .researchAfrica {
+    padding: 80px 100px;
+  }
+
+  .researchPlanTitle {
+    font-size: 24px;
+  }
+
+  .researchPlanText {
+    font-size: 16px;
+  }
+
+  .researchPlanLink {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .researchForms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .submitButton {
+    grid-column: 2 / -1;
+  }
+
+  .researchPlans {
+    justify-content: space-between;
+  }
+
+  .researchNewsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
