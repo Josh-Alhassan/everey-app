@@ -1,0 +1,46 @@
+"use client";
+
+import React, { useState } from "react";
+import styles from "./AccordionUnit.module.css";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+
+interface AccordionUnitProps {
+  title: string;
+  content: string;
+}
+
+const AccordionUnit: React.FC<AccordionUnitProps> = ({ title, content }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleAccordion = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  return (
+    <div className={styles.accordionUnit}>
+      {/* Accordion Header */}
+      <div
+        className={styles.accordionUnitHeader}
+        onClick={toggleAccordion}
+        aria-expanded={isOpen}
+        aria-controls="accordion-content"
+      >
+        <h3 className={styles.accordionUnitTitle}>{title}</h3>
+        <span className={styles.accordionIcon}>
+          {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+        </span>
+      </div>
+
+      {/* Accordion Content */}
+      <article
+        id="accordion-content"
+        className={`${styles.accordionContent} ${isOpen ? styles.open : ""}`}
+        aria-hidden={!isOpen}
+      >
+        {content}
+      </article>
+    </div>
+  );
+};
+
+export default AccordionUnit;

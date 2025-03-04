@@ -8,6 +8,7 @@
   line-height: 28.8px;
 
   background-image: url("../../../public/faq-bkg.png");
+  background-size: cover;
 
   color: var(--text-color);
 }

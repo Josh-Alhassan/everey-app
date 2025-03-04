@@ -1,0 +1,47 @@
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.peopleSvg {
+  background-color: var(--primaryColor);
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 18.43px;
+  line-height: 22.11px;
+}
+
+@media (min-width: 768px) {
+  .cardTitle {
+    font-size: 22px;
+  }
+
+  .peopleSvg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardTitle {
+    font-size: 24px;
+  }
+  .cardHeader {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cardTitle {
+    font-size: 29px;
+  }
+}
