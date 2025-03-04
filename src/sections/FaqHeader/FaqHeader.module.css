@@ -1,0 +1,14 @@
+.headerFaqs {
+  padding: 80px 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+
+  background-image: url("../../../public/faq-bkg.png");
+  background-size: cover;
+
+  color: var(--text-color);
+}

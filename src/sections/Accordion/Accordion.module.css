@@ -1,0 +1,31 @@
+.accordionContainer {
+  padding: 80px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .accordionContainer {
+    padding: 100px 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .accordionContainer {
+    padding: 100px;
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+}
+
+@media (min-width: 1280) {
+  .accordionContainer {
+    padding: 100px 120px;
+    column-gap: 80px;
+  }
+}
