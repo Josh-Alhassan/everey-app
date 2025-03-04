@@ -105,3 +105,60 @@ export const setUsApart = [
       "Fuel your research with the funding you need. Turn your ideas into reality.",
   },
 ];
+
+// Interface for Form Field
+interface FormFieldConfig {
+  id: string;
+  label: string;
+  name: string;
+  placeholder: string;
+  type?: string;
+  required?: boolean;
+}
+
+// Data for Form Fields
+export const formFields: FormFieldConfig[] = [
+  {
+    id: "firstName",
+    label: "First Name",
+    name: "firstName",
+    placeholder: "Enter your first name",
+    required: true,
+  },
+  {
+    id: "lastName",
+    label: "Last Name",
+    name: "lastName",
+    placeholder: "Enter your last name",
+    required: true,
+  },
+  {
+    id: "email",
+    label: "Email",
+    name: "email",
+    placeholder: "Enter your email",
+    type: "email",
+    required: true,
+  },
+  {
+    id: "phoneNumber",
+    label: "Phone Number",
+    name: "phoneNumber",
+    placeholder: "+234 012 3456 789",
+    required: true,
+  },
+  {
+    id: "field",
+    label: "Field - (Academic category)",
+    name: "field",
+    placeholder: "Enter your field",
+    required: true,
+  },
+  {
+    id: "categories",
+    label: "Categories - (What type of research)",
+    name: "categories",
+    placeholder: "Enter your research category",
+    required: true,
+  },
+];

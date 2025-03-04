@@ -13,3 +13,13 @@
 
   color: var(--text-color);
 }
+
+@media (min-width: 768px) {
+  .header {
+    padding: 150px;
+  }
+
+  .headerTitle {
+    font-size: 42px;
+  }
+}
