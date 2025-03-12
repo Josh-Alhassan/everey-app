@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export default function Home() {
   return (
-    <div>
+    <div className="screen-width">
       <Hero />
       <AreaOfSpecialization />
       <ArticleSection />

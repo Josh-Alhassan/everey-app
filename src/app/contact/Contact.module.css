@@ -3,3 +3,10 @@
     padding: 100px 120px;
   }
 }
+
+@media (min-width: 1440px) {
+  .contactPage {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

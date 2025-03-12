@@ -314,3 +314,10 @@
     margin-top: -200px;
   }
 }
+
+@media (min-width: 1440px) {
+  .heroSection {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

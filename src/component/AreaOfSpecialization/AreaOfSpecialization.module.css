@@ -1,5 +1,4 @@
 .areaSection {
-  background-color: var(--background-color-green);
   padding: 60px 20px;
 }
 
@@ -95,5 +94,12 @@
     font-size: 20px;
     line-height: 24px;
     padding: 12px 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .areaSection {
+    padding: 200px 400px;
+    background-color: var(--background-color-green);
   }
 }

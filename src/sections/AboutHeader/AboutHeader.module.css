@@ -71,3 +71,10 @@
 }
 
 /* 133px 152px */
+
+@media (min-width: 1440px) {
+  .aboutHeader {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

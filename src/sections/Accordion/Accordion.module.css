@@ -23,9 +23,16 @@
   }
 }
 
-@media (min-width: 1280) {
+@media (min-width: 1280px) {
   .accordionContainer {
     padding: 100px 120px;
     column-gap: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .accordionContainer {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
   }
 }

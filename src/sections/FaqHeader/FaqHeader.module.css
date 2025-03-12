@@ -12,3 +12,24 @@
 
   color: var(--text-color);
 }
+
+@media (min-width: 768px) {
+  .headerFaqs {
+    padding: 150px;
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerFaqs {
+    padding: 250px;
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .headerFaqs {
+    padding: 250px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

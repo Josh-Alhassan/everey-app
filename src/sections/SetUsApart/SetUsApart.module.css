@@ -30,3 +30,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}
