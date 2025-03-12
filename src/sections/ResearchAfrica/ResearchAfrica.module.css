@@ -124,3 +124,10 @@
     gap: 24px;
   }
 }
+
+@media (min-width: 1440px) {
+  .researchAfrica {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

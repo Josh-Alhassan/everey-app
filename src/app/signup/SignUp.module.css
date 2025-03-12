@@ -1,0 +1,108 @@
+.signupWrapper {
+  padding: 40px 20px;
+}
+
+.evereyLogo {
+  width: 180px;
+}
+
+.welcomeSvg {
+  margin: 0 auto;
+}
+
+.signupContent {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--dark-text-2);
+}
+
+.signupTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+
+  margin-bottom: 24px;
+}
+
+.signupText {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 1%;
+}
+
+.ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signupImage {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .signupWrapper {
+    padding: 60px 40px;
+  }
+  .signupContent {
+    margin-bottom: 86px;
+  }
+  .signupTitle {
+    font-size: 40px;
+  }
+
+  .signupText {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .signupContainer {
+    display: flex;
+  }
+
+  .signupWrapper {
+    padding: 100px 50px;
+    width: 65%;
+  }
+
+  .imageContainer {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+  }
+
+  .signupImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .imageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 160, 112, 0.75);
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .signupWrapper {
+    padding: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .signupContainer {
+    height: 100vh;
+  }
+  .signupWrapper {
+    padding: 250px 200px;
+  }
+}
