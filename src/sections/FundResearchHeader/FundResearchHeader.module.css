@@ -23,3 +23,10 @@
     font-size: 42px;
   }
 }
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 300px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}
