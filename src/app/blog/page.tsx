@@ -34,10 +34,10 @@ const Blog = () => {
   // Get the articles for the current page
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-  const currentArticles = filteredArticles.slice(
-    indexOfFirstArticle,
-    indexOfLastArticle
-  );
+  // const currentArticles = filteredArticles.slice(
+  //   indexOfFirstArticle,
+  //   indexOfLastArticle
+  // );
 
   // Handle page change
   const handleNextPage = () => {

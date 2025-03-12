@@ -167,3 +167,14 @@
     gap: 24px; /* Add gap between cards */
   }
 }
+
+@media (min-width: 1440px) {
+  .articleSection {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+
+  .articleContainer {
+    justify-items: center;
+  }
+}

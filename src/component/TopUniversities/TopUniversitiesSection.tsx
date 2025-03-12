@@ -25,19 +25,19 @@ interface University {
 const universities: University[] = [
   {
     id: 1,
-    image: require("../../../public/university1.png"),
+    image: university1,
     alt: "Lead City University",
     name: "Lead City University",
   },
   {
     id: 2,
-    image: require("../../../public/university2.png"),
+    image: university2,
     alt: "Afe Babalola University",
     name: "Afe Babalola University",
   },
   {
     id: 3,
-    image: require("../../../public/university3.png"),
+    image: university3,
     alt: "Covenant University",
     name: "Covenant University",
   },

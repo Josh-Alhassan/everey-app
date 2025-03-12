@@ -116,3 +116,11 @@
     width: 50%;
   }
 }
+
+@media (min-width: 1440px) {
+  .blogHeader,
+  .blogContainer {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

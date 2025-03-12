@@ -105,3 +105,10 @@
     font-size: 24px;
   }
 }
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

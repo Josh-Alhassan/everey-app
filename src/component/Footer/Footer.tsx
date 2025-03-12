@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
     <footer className={styles.footerContainer}>
       {/* Subscribe Section */}
       <Subscribe
-        header="Join Africa’s Largest Research Community"
+        header="Join Africa's Largest Research Community"
         text="Stay Ahead in Research!"
       />
 

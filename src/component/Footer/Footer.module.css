@@ -200,3 +200,10 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  .footerContainer {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

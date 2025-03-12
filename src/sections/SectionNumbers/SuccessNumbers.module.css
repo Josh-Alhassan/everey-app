@@ -117,3 +117,10 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1440px) {
+  .wrapper {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+}

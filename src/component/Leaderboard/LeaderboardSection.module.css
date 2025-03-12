@@ -142,3 +142,14 @@
 
 @media (min-width: 1280px) {
 }
+
+@media (min-width: 1440px) {
+  .leaderboardSection {
+    padding: 200px 400px;
+    /* background-color: var(--background-color-green); */
+  }
+
+  .leaderboardCards {
+    justify-content: space-evenly;
+  }
+}
