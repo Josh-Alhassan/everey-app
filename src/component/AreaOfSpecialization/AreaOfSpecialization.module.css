@@ -1,5 +1,6 @@
 .areaSection {
   padding: 60px 20px;
+  background-color: var(--background-color-green);
 }
 
 .areaHeader {
@@ -97,9 +98,8 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   .areaSection {
-    padding: 200px 400px;
-    background-color: var(--background-color-green);
+    padding: 200px 300px;
   }
 }

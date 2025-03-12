@@ -1,5 +1,6 @@
 .articleSection {
   padding: 80px 20px;
+  /* background-color: var(--background-color-green); */
 }
 
 .articleHeader {
@@ -166,9 +167,18 @@
     grid-template-columns: repeat(3, 1fr); /* Two columns for tablets */
     gap: 24px; /* Add gap between cards */
   }
+
+  .articleSection {
+    padding: 200px 150px;
+    /* background-color: var(--background-color-green); */
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1750px) {
+  /* .articleSection {
+    padding: 200px 150px;
+  } */
+
   .articleSection {
     padding: 200px 400px;
     /* background-color: var(--background-color-green); */
