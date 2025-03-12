@@ -6,7 +6,7 @@ import FundResearch from "@/component/FundResearch/FundResearch";
 import Hero from "@/component/Hero/Hero";
 import LeaderboardSection from "@/component/Leaderboard/LeaderboardSection";
 import TopUniversitiesSection from "@/component/TopUniversities/TopUniversitiesSection";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
 // // Load the Inter font with specific weights and subsets
 // const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "700"] });

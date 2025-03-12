@@ -101,7 +101,9 @@ const ResearchAfrica: React.FC = () => {
               onChange={function (
                 e: React.ChangeEvent<HTMLInputElement>
               ): void {
-                throw new Error("Function not implemented.");
+                throw new Error(
+                  "Function not implemented." + e.preventDefault()
+                );
               }}
             />
           ))}

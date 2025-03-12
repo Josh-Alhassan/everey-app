@@ -5,9 +5,9 @@ import styles from "./TopUniversities.module.css";
 import SecondaryHeader from "@/utils/SecondaryHeader/SecondaryHeader";
 import Image, { StaticImageData } from "next/image";
 
-import university1 from "../../public/university1.png";
-import university2 from "../../public/university2.png";
-import university3 from "../../public/university3.png";
+import university1 from "../../../public/university1.png";
+import university2 from "../../../public/university2.png";
+import university3 from "../../../public/university3.png";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

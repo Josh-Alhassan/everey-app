@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
         <div>
           <Image src={logo} alt="Everey" className={styles.footerLogo} />
           <p className={styles.footerNavigationText}>
-            We're dedicated to promoting indigenous research, leveraging local
+            We are dedicated to promoting indigenous research, leveraging local
             expertise for impactful global publishing.
           </p>
         </div>
