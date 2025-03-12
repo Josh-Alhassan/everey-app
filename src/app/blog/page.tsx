@@ -12,6 +12,7 @@ import leftVector from "../../../public/left-Vector.svg";
 import rightVector from "../../../public/right-Vector.svg";
 
 import { articlesBlog } from "@/utils/constants";
+import Navbar from "@/component/Navbar/Navbar";
 
 const Blog = () => {
   const [searchQuery, setSearchQuery] = React.useState<string>("");
@@ -56,6 +57,7 @@ const Blog = () => {
 
   return (
     <div>
+      <Navbar />
       <header className={styles.blogHeader}>
         <h1 className={styles.blogTitle}>BLOG</h1>
         <input

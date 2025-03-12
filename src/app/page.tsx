@@ -5,6 +5,7 @@ import Footer from "@/component/Footer/Footer";
 import FundResearch from "@/component/FundResearch/FundResearch";
 import Hero from "@/component/Hero/Hero";
 import LeaderboardSection from "@/component/Leaderboard/LeaderboardSection";
+import Navbar from "@/component/Navbar/Navbar";
 import TopUniversitiesSection from "@/component/TopUniversities/TopUniversitiesSection";
 // import { Inter } from "next/font/google";
 
@@ -14,6 +15,7 @@ import TopUniversitiesSection from "@/component/TopUniversities/TopUniversitiesS
 export default function Home() {
   return (
     <div className="screen-width">
+      <Navbar />
       <Hero />
       <AreaOfSpecialization />
       <ArticleSection />
