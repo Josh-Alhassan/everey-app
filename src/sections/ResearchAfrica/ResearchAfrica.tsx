@@ -10,7 +10,6 @@ import { researchPlans } from "@/component/ResearchPlanCard/ResearchPlanCard";
 
 import { formFields } from "@/utils/constants";
 import ArticleCard from "@/component/Article/ArticleCard";
-import Footer from "@/component/Footer/Footer";
 
 interface Article {
   thumbnail: string; // Path to the thumbnail image

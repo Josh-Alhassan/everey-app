@@ -1,8 +1,5 @@
 import React from "react";
 import styles from "./ArticleSection.module.css";
-import Image from "next/image";
-import thumbnail from "../../public/thumbnail.png";
-import authorImg from "../../public/articleAuthor.jpg";
 import ArticleCard from "./ArticleCard";
 
 interface Article {
