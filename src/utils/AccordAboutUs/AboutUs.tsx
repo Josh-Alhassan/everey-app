@@ -6,34 +6,34 @@ const AboutUs = () => {
   const header = {
     imageSrc: peopleSvg,
     imageAlt: "People",
-    title: "About Us",
+    title: "About Every App",
   };
 
   const accordionItems = [
     {
       title: "What is Everey App?",
       content:
-        "Everey App is a comprehensive platform designed to empower African researchers to achieve their full potential.",
+        "Everey AAP is a comprehensive platform designed to empower African researchers to achieve their full potential.",
     },
     {
-      title: "How does it work?",
+      title: "What do we do? ",
       content:
-        "Everey App connects researchers with resources, funding, and collaboration opportunities.",
+        "We offer a range of services and tools to support your research journey from start to finish.",
     },
     {
       title: "Who can use it?",
       content:
-        "Everey App is open to all African researchers, academics, and students.",
+        "African researchers, educators, and institutions can benefit from our platform and resources.",
     },
     {
       title: "What problems do we solve?",
       content:
-        "We address the challenges of limited access to resources, funding, and collaboration opportunities for African researchers.",
+        "We address the challenges of limited access to resources, funding,  publishing opportunities, and collaboration opportunities for African researchers.",
     },
     {
       title: "Why use Everey App?",
       content:
-        "Everey App is open to all African researchers, academics, and students.",
+        "Accelerate your research, expand your network, and increase your research's impact.",
     },
   ];
 

@@ -6,34 +6,33 @@ const Payment = () => {
   const header = {
     imageSrc: payment,
     imageAlt: "Cash",
-    title: "Payment",
+    title: "For Institutions",
   };
 
   const accordionItems = [
     {
-      title: "What is Everey App?",
+      title: "Why use Everey AAP?",
       content:
-        "Everey App is a comprehensive platform designed to empower African researchers to achieve their full potential.",
+        "Enhance your institution's research reputation and capabilities.",
     },
     {
-      title: "How does it work?",
+      title: "How do I get started? ",
       content:
-        "Everey App connects researchers with resources, funding, and collaboration opportunities.",
+        "Partner with us to implement Everey AAP within your institution.",
     },
     {
-      title: "Who can use it?",
+      title: "Can you help us improve? ",
       content:
-        "Everey App is open to all African researchers, academics, and students.",
+        "We offer tailored support to elevate your institution's research performance.",
     },
     {
-      title: "What problems do we solve?",
-      content:
-        "We address the challenges of limited access to resources, funding, and collaboration opportunities for African researchers.",
+      title: "Can we partner with you? ",
+      content: "Build a strategic partnership to drive innovation and impact.",
     },
     {
-      title: "Why use Everey App?",
+      title: "How can we increase research collaboration?",
       content:
-        "Everey App is open to all African researchers, academics, and students.",
+        "Foster a collaborative research culture within your institution.",
     },
   ];
 
