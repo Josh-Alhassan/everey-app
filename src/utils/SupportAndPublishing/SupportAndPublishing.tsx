@@ -2,6 +2,19 @@ import AccordionCard from "@/component/AccordionCard/AccordionCard";
 import React from "react";
 import payment from "../../../public/Cash.png";
 
+import { accordionItems } from "../constants";
+
+/**
+ * A React component that renders an accordion-based support and publishing section.
+ *
+ * @component
+ * @example
+ * // Usage in a parent component:
+ * <SupportAndPublishing />
+ *
+ * @returns {JSX.Element} A div containing an `AccordionCard` with predefined header and items.
+ */
+
 const SupportAndPublishing = () => {
   const header = {
     imageSrc: payment,
@@ -9,29 +22,13 @@ const SupportAndPublishing = () => {
     title: "Support and Publishing",
   };
 
-  const accordionItems = [
-    {
-      title: "How can students use Everey AAP? ",
-      content:
-        "Launch your research career with our student-focused resources.",
-    },
-    {
-      title: "What resources are available for faculty?  ",
-      content: "Access tools and support to excel in your research role.",
-    },
-    {
-      title: "How can researchers access tools and databases?  ",
-      content: "Find the resources you need to advance your research.",
-    },
-    {
-      title: "How does the manuscript submission process work?  ",
-      content: "Submit your manuscript with ease and confidence.",
-    },
-    {
-      title: "How does the peer review process work?",
-      content: "Benefit from expert feedback to strengthen your research.",
-    },
-  ];
+  /**
+   * Header configuration for the accordion card.
+   * @type {Object}
+   * @property {string} imageSrc - Path to the header image (e.g., imported `payment` asset).
+   * @property {string} imageAlt - Alt text for the header image.
+   * @property {string} title - Title displayed in the header.
+   */
 
   return (
     <div>

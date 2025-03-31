@@ -1,32 +1,32 @@
 /* Base Styles */
 .navbar {
-  position: fixed; /* Fix the navbar at the top */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Span the full width of the viewport */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure the navbar stays above other content */
+  z-index: 1000;
 }
 
 /* Logo */
 .logo {
-  z-index: 1000; /* Ensure logo is above the menu */
+  z-index: 1000;
 }
 
 /* Hamburger Menu (Mobile) */
 .hamburger {
-  display: none; /* Hidden on desktop */
+  display: none;
   flex-direction: column;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Ensure hamburger is above the menu */
+  z-index: 1000;
 }
 
 .hamburgerLine {

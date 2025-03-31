@@ -275,3 +275,26 @@ export const articlesBlog: Article[] = [
     readMoreLink: "#",
   },
 ];
+
+export const accordionItems = [
+  {
+    title: "How can students use Everey AAP? ",
+    content: "Launch your research career with our student-focused resources.",
+  },
+  {
+    title: "What resources are available for faculty?  ",
+    content: "Access tools and support to excel in your research role.",
+  },
+  {
+    title: "How can researchers access tools and databases?  ",
+    content: "Find the resources you need to advance your research.",
+  },
+  {
+    title: "How does the manuscript submission process work?  ",
+    content: "Submit your manuscript with ease and confidence.",
+  },
+  {
+    title: "How does the peer review process work?",
+    content: "Benefit from expert feedback to strengthen your research.",
+  },
+];
