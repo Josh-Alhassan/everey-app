@@ -13,6 +13,76 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+/**
+ * TopUniversitiesSection Component
+ *
+ * @component
+ * @description
+ * A responsive carousel section showcasing top university partners featuring:
+ * - Section header with title
+ * - Interactive carousel of university logos
+ * - Responsive design with breakpoint configurations
+ * - Optimized image loading
+ *
+ * @example
+ * // Basic usage
+ * <TopUniversitiesSection />
+ *
+ * @structure
+ * 1. Section Header:
+ *    - Uses SecondaryHeader component
+ *    - Displays "Top Universities" title
+ * 2. Carousel:
+ *    - Displays university logos and names
+ *    - Responsive slide configuration
+ *
+ * @interface University
+ * @property {number} id - Unique identifier
+ * @property {StaticImageData} image - University logo image
+ * @property {string} alt - Alt text for logo
+ * @property {string} name - University name
+ *
+ * @data universities
+ * @description Array of university objects containing:
+ * - Lead City University
+ * - Afe Babalola University
+ * - Covenant University
+ *
+ * @carouselSettings
+ * @description Configuration for react-slick carousel:
+ * - Responsive breakpoints (desktop, tablet, mobile)
+ * - Infinite looping
+ * - Custom slide counts per viewport
+ * - Transition speed: 500ms
+ *
+ * @styles {module} styles - CSS Module classes:
+ * - `.topUniversitiesSection` - Main container
+ * - `.topUniversitiesContainer` - Carousel wrapper
+ * - `.topUniversities` - Individual slide container
+ * - `.topUniversityImg` - University logo image
+ * - `.topUniversitiesLabel` - University name text
+ *
+ * @accessibility
+ * - Semantic section element
+ * - Alt text for all images
+ * - Keyboard-navigable carousel
+ * - Screen reader friendly content
+ * - Proper color contrast
+ *
+ * @performance
+ * - Optimized image loading via next/image
+ * - Efficient carousel rendering
+ * - Responsive image sizing
+ * - Client-side only interactivity
+ *
+ * @dependencies
+ * - react-slick for carousel functionality
+ * - slick-carousel CSS styles
+ * - SecondaryHeader component
+ * - next/image for optimized images
+ *
+ */
+
 // Define TypeScript interface for university data
 interface University {
   id: number;

@@ -1,5 +1,56 @@
 import React from "react";
 import styles from "./AreaOfSpecialization.module.css";
+import { defaultCareerFields } from "@/utils/constants";
+
+/**
+ * AreaOfSpecialization Component
+ *
+ * @component
+ * @description
+ * Displays a section featuring career fields/specializations with a header and
+ * a grid of field names. Supports both static default data and dynamic data input.
+ *
+ * @example
+ * // Using default data
+ * <AreaOfSpecialization />
+ *
+ * // With custom career fields
+ * <AreaOfSpecialization careerFields={[
+ *   { field: 'Computer Science' },
+ *   { field: 'Biomedical Engineering' }
+ * ]} />
+ *
+ * @param {AreaOfSpecializationProps} [props] - Component props
+ * @param {CareerField[]} [props.careerFields=defaultCareerFields] - Array of career fields to display
+ *
+ * @returns {React.ReactElement} A section containing:
+ * - Header with title and description
+ * - Responsive grid of career fields
+ *
+ * @interface CareerField
+ * @property {string} field - Name of the career field/specialization
+ *
+ * @interface AreaOfSpecializationProps
+ * @property {CareerField[]} [careerFields] - Optional array of career fields
+ *
+ * @styles {module} styles - CSS Module classes:
+ * - `.areaSection` - Main container
+ * - `.areaHeader` - Header container
+ * - `.areaHeaderTitle` - Section title
+ * - `.areaHeaderText` - Section description
+ * - `.areaFields` - Fields grid container
+ * - `.areaField` - Individual field item
+ *
+ * @accessibility
+ * - Uses semantic HTML (section, header, main)
+ * - Proper heading hierarchy
+ * - Responsive design for all viewports
+ * - Sufficient color contrast
+ *
+ * @data
+ * - Uses defaultCareerFields if no props provided
+ * - Expects array of { field: string } objects
+ */
 
 // Define TypeScript interface for career fields
 interface CareerField {
@@ -10,22 +61,6 @@ interface CareerField {
 interface AreaOfSpecializationProps {
   careerFields?: CareerField[]; // Optional prop for dynamic data
 }
-
-// Static data for career fields (can be moved to a separate file or fetched from an API)
-const defaultCareerFields: CareerField[] = [
-  { field: "Art & Humanities" },
-  { field: "Biomedical" },
-  { field: "Computer Science" },
-  { field: "Education" },
-  { field: "Environmental Science" },
-  { field: "Engineering" },
-  { field: "Social Sciences" },
-  { field: "History" },
-  { field: "Law" },
-  { field: "Medicine" },
-  { field: "Physics" },
-  { field: "Psychology" },
-];
 
 const AreaOfSpecialization: React.FC<AreaOfSpecializationProps> = ({
   careerFields = defaultCareerFields, // Use default data if no props are passed

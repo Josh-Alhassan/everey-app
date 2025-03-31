@@ -2,12 +2,50 @@ import AccordionCard from "@/component/AccordionCard/AccordionCard";
 import React from "react";
 import payment from "../../../public/Cash.png";
 
+/**
+ * Payment Component - Displays institutional payment information in an accordion format.
+ *
+ * This component renders an AccordionCard with a header section and multiple expandable items
+ * that explain the benefits and partnership opportunities of Everey AAP for institutions.
+ * It includes visual elements and detailed content about institutional collaboration.
+ *
+ * @module Payment
+ * @returns {React.ReactElement} The rendered Payment component with institutional information
+ *
+ * @example
+ * // Basic usage
+ * import Payment from '@/components/Payment';
+ *
+ * function App() {
+ *   return <Payment />;
+ * }
+ */
+
 const Payment = () => {
+  /**
+   * Header configuration for the AccordionCard
+   * @type {Object}
+   * @property {string} imageSrc - Path to the cash/payment image
+   * @property {string} imageAlt - Alt text for the header image
+   * @property {string} title - Title displayed in the header ("For Institutions")
+   */
+
   const header = {
     imageSrc: payment,
     imageAlt: "Cash",
     title: "For Institutions",
   };
+
+  /**
+   * Array of accordion items containing institutional information
+   * @type {Array<{
+   *   title: string,
+   *   content: string
+   * }>}
+   *
+   * @property {string} title - The question/benefit title
+   * @property {string} content - Detailed explanation of the institutional benefit
+   */
 
   const accordionItems = [
     {

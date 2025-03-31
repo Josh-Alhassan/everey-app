@@ -11,6 +11,80 @@ import { researchPlans } from "@/component/ResearchPlanCard/ResearchPlanCard";
 import { formFields } from "@/utils/constants";
 import ArticleCard from "@/component/Article/ArticleCard";
 
+/**
+ * ResearchAfrica Component
+ *
+ * @component
+ * @description
+ * A comprehensive research portal section featuring:
+ * - Header with title and description
+ * - Research plan options
+ * - Researcher application form
+ * - Research news articles
+ *
+ * Designed as the main interface for connecting researchers with projects in Africa.
+ *
+ * @example
+ * // Basic usage
+ * <ResearchAfrica />
+ *
+ * @structure
+ * 1. Header Section:
+ *    - Main title and descriptive text
+ * 2. Research Plans:
+ *    - Grid of research duration options
+ * 3. Application Form:
+ *    - Multi-field researcher application
+ * 4. Research News:
+ *    - Latest research-related articles
+ *
+ * @interface Article
+ * @property {string} thumbnail - Article thumbnail image path
+ * @property {string} label - Article category/tag
+ * @property {string} authorImg - Author profile image path
+ * @property {string} authorName - Author's full name
+ * @property {string} date - Publication date and read time
+ * @property {string} title - Article headline
+ * @property {string} preview - Short preview text
+ * @property {string} readMoreLink - URL to full article
+ *
+ * @data
+ * - Uses `researchPlans` from ResearchPlanCard
+ * - Uses `formFields` from constants
+ * - Local `articles` array for news
+ *
+ * @handlers
+ * @method handleSubmit - Form submission handler (currently logs to console)
+ *
+ * @styles {module} styles - CSS Module classes:
+ * - `.researchAfrica` - Main container
+ * - `.startResearch` - Research plans section
+ * - `.researchPlans` - Plans grid container
+ * - `.researchFormWrapper` - Form section wrapper
+ * - `.researchForms` - Form container
+ * - `.submitButton` - Apply button
+ * - `.researchNews` - News section
+ * - `.researchNewsWrapper` - Articles container
+ *
+ * @dependencies
+ * - SecondaryHeader for consistent section headers
+ * - FormField for form inputs
+ * - ResearchPlanCard for plan options
+ * - ArticleCard for news articles
+ *
+ * @accessibility
+ * - Semantic section structure
+ * - Proper heading hierarchy
+ * - Form field labeling
+ * - Keyboard navigable
+ * - Screen reader friendly content
+ *
+ * @performance
+ * - Efficient component composition
+ * - Modular section rendering
+ * - Image optimization in child components
+ */
+
 interface Article {
   thumbnail: string; // Path to the thumbnail image
   label: string; // Article label (e.g., "Education")

@@ -3,6 +3,74 @@ import React from "react";
 import styles from "../../component/Article/ArticleSection.module.css";
 import ArticleCard from "@/component/Article/ArticleCard";
 
+/**
+ * AboutArticle Component
+ *
+ * @component
+ * @description
+ * Displays a section of featured articles with:
+ * - Section header with title and "View All" link
+ * - Grid of article cards showing:
+ *   - Thumbnail image
+ *   - Category label
+ *   - Author information
+ *   - Publication date
+ *   - Article title
+ *   - Preview text
+ *   - "Read more" link
+ *
+ * @example
+ * // Basic usage
+ * <AboutArticle />
+ *
+ * @structure
+ * 1. Header Section:
+ *    - "Latest News" title
+ *    - "All articles" link
+ * 2. Articles Grid:
+ *    - Multiple ArticleCard components
+ *    - Responsive grid layout
+ *
+ * @interface Article
+ * @property {string} thumbnail - Path to article thumbnail image
+ * @property {string} label - Article category/tag
+ * @property {string} authorImg - Path to author profile image
+ * @property {string} authorName - Author's full name
+ * @property {string} date - Formatted publication date
+ * @property {string} title - Article headline
+ * @property {string} preview - Short preview text
+ * @property {string} readMoreLink - URL to full article
+ *
+ * @data articles
+ * @description Array of article objects containing:
+ * - Education article by Micheal Angelo
+ * - Technology article by Jane Doe
+ * - Technology article by Juliette Romeo
+ *
+ * @styles {module} styles - CSS Module classes:
+ * - `.articleSection` - Main container
+ * - `.articleHeader` - Header container
+ * - `.articleHeaderTitle` - Section title
+ * - `.articleHeaderText` - "View All" link
+ * - `.articleContainer` - Articles grid wrapper
+ *
+ * @accessibility
+ * - Semantic HTML (section, header, main)
+ * - Proper heading hierarchy
+ * - Needs alt text for images (handled in ArticleCard)
+ * - Keyboard-navigable links
+ * - Sufficient color contrast
+ *
+ * @performance
+ * - Efficient card rendering
+ * - Image optimization handled in ArticleCard
+ * - Lightweight parent component
+ *
+ * @dependencies
+ * - ArticleCard component for individual articles
+ * - next/image for optimized images (in ArticleCard)
+ */
+
 interface Article {
   thumbnail: string; // Path to the thumbnail image
   label: string; // Article label (e.g., "Education")
