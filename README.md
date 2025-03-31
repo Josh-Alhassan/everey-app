@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Everey Research App
 
-## Getting Started
+Everey is Africa's leading platform for academic collaboration, data-driven insights, and sustainable research funding that connects researchers, institutions, and organizations to accelerate innovation.
 
-First, run the development server:
+## Key Functionalities
++ Write and publish researchs and educational articles
++ Create user connections with other professionals int the education industry
++ request review of Education article/research from lecturers or field experts of your choosing
++ users can subscribe to your researchs or articles
 
-```bash
+## Technologies used
++ React.js, Next.js, Typescript
+
+## Setup and Installation
+``` bash
+# Clone the repo
+git clone https://github.com/your-username/repo-name.git
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run dev     # Starts dev server
+npm run build   # Production build
+npm run lint    # Runs ESLint
+npm run test    # Runs tests (if any)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Folder Structure
 
-## Learn More
+/src
+|-- /components   # Reusable UI components
+|-- /pages        # Next.js pages (routing)
+|-- /sections        # Custom React hooks
+|-- /types        # TypeScript interfaces
+|-- /utils        # Helper functions
 
-To learn more about Next.js, take a look at the following resources:
+## Website Previews (Slight preview of the website)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot 2025-02-13 052914](https://github.com/user-attachments/assets/31e33b3f-5c9e-423a-aa8f-bc1b8cd0afef)
+![Screenshot 2025-02-13 000337](https://github.com/user-attachments/assets/e6fdddbc-774e-445a-94f0-4f48fb15b069)
+![Screenshot 2025-02-14 071019](https://github.com/user-attachments/assets/1d9b0996-bdea-4ccc-b5cb-43112cbc30cc)
+![Screenshot 2025-02-14 070706](https://github.com/user-attachments/assets/88803550-d942-45fa-bd15-e288a72131fd)
+![Screenshot 2025-02-15 041313](https://github.com/user-attachments/assets/c9fb654a-ed35-4fce-88c3-2c938f0242b0)
+![Screenshot 2025-02-15 041531](https://github.com/user-attachments/assets/ac52abd5-62ff-4fe0-9d22-0bfcd74c6c9d)
+![Screenshot 2025-02-26 113420](https://github.com/user-attachments/assets/a9b88625-7282-41da-b418-37d6d4045099)
+![Screenshot 2025-02-26 113635](https://github.com/user-attachments/assets/a5112f19-3412-4ee5-8089-6ab1bffb49b0)
+![Screenshot 2025-02-25 013143](https://github.com/user-attachments/assets/0c46a10c-4204-4169-9fbc-a43ce9d31705)
+![Screenshot 2025-02-25 013245](https://github.com/user-attachments/assets/892a6109-ba40-48b6-9c38-9cd35edae916)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
