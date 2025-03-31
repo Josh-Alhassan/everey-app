@@ -8,6 +8,65 @@ import x from "../../../public/x-vector.png";
 import insta from "../../../public/instagram.png";
 import Subscribe from "./Subscribe";
 
+/**
+ * Footer Component
+ *
+ * @component
+ * @description
+ * The global footer component containing:
+ * - Newsletter subscription section
+ * - Brand logo and description
+ * - Navigation links
+ * - Social media links
+ *
+ * @example
+ * // Basic usage
+ * <Footer />
+ *
+ * @structure
+ * 1. Subscribe Section (top)
+ * 2. Navigation Section (bottom):
+ *    - Branding (logo + description)
+ *    - Footer links (3 columns)
+ *    - Social media links
+ *
+ * @data
+ * - Uses `footerRoutes` for navigation links
+ * - Uses `socialLinks` for social media icons
+ * - Subscribe component handles newsletter signup
+ *
+ * @interface FooterRoute
+ * @property {string} href - Route path
+ * @property {string} label - Link text
+ *
+ * @interface SocialLink
+ * @property {string} href - Social media URL
+ * @property {StaticImageData} icon - Social icon image
+ * @property {string} alt - Alt text for icon
+ *
+ * @styles {module} styles - CSS Module classes:
+ * - `.footerContainer` - Main container
+ * - `.footerNavigation` - Bottom section container
+ * - `.footerLogo` - Brand logo
+ * - `.footerNavigationText` - Description text
+ * - `.footerRoutes` - Links container
+ * - `.footerLink` - Individual link
+ * - `.footerSocials` - Social links container
+ * - `.footerSocialLogo` - Social icon
+ *
+ * @accessibility
+ * - Semantic footer element
+ * - Proper link labeling
+ * - Social links open in new tab with warning
+ * - Sufficient color contrast
+ * - Screen reader friendly
+ *
+ * @performance
+ * - Optimized image loading
+ * - Static link data (could be dynamic)
+ * - Efficient CSS layout
+ */
+
 // Define TypeScript interfaces for footer data
 interface FooterRoute {
   href: string;

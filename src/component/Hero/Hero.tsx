@@ -1,3 +1,85 @@
+/**
+ * Hero Component
+ *
+ * @component
+ * @description
+ * The main hero section for the Everey platform, featuring:
+ * - Promotional headline and description
+ * - Call-to-action button
+ * - Key metrics display
+ * - Hero image with caption
+ * - Decorative "out of flow" elements
+ *
+ * @example
+ * // Basic usage
+ * <Hero />
+ *
+ * @structure
+ * 1. Text Content (left):
+ *    - Main title
+ *    - Description paragraph
+ *    - CTA button
+ *    - Metrics blocks
+ * 2. Visual Content (right):
+ *    - Hero image with caption
+ *    - Decorative text elements
+ *
+ * @interface HeroContent
+ * @property {string} title - Main headline (1 line recommended)
+ * @property {string} description - Supporting text (2-3 sentences)
+ * @property {Object} cta - Call-to-action configuration
+ * @property {string} cta.text - Button text
+ * @property {string} cta.link - Destination URL
+ * @property {Metric[]} metrics - Array of key metrics
+ * @property {Object} image - Hero image configuration
+ * @property {StaticImageData} image.src - Image source
+ * @property {string} image.alt - Alt text
+ * @property {string} image.caption - Image caption
+ * @property {Object} outOfFlow - Decorative text elements
+ * @property {string} outOfFlow.research - Left decorative text
+ * @property {string} outOfFlow.publications - Right decorative text
+ *
+ * @interface Metric
+ * @property {string} value - Numeric value (e.g., "2.5M+")
+ * @property {string} label - Metric description
+ *
+ * @styles {module} styles - CSS Module classes:
+ * - `.heroSection` - Main container
+ * - `.heroDescribe` - Text content container
+ * - `.heroTitle` - Main headline
+ * - `.heroText` - Description text
+ * - `.heroSignUp` - CTA button
+ * - `.heroMetrics` - Metrics container
+ * - `.metricsBlock` - Individual metric block
+ * - `.metricNumbers` - Metric value
+ * - `.metricLabel` - Metric description
+ * - `.heroImgContainer` - Image container
+ * - `.heroImageDiv` - Image wrapper
+ * - `.heroImg` - Hero image
+ * - `.heroImgCaption` - Image caption
+ * - `.outOfFlow` - Decorative elements container
+ * - `.outOfFlowResearch` - Left decorative text
+ * - `.outOfFlowPublication` - Right decorative text
+ *
+ * @accessibility
+ * - Semantic HTML structure
+ * - Proper heading hierarchy
+ * - Image alt text and caption
+ * - Keyboard-navigable CTA
+ * - Sufficient color contrast
+ *
+ * @performance
+ * - Priority loading for hero image
+ * - Optimized image handling via next/image
+ * - Efficient CSS layout
+ *
+ * @improvements
+ * - Make content configurable via props
+ * - Add hover/focus states for CTA
+ * - Implement responsive typography
+ * - Add loading state for image
+ */
+
 import React from "react";
 import styles from "./Hero.module.css";
 import Image from "next/image";

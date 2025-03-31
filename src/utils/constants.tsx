@@ -298,3 +298,23 @@ export const accordionItems = [
     content: "Benefit from expert feedback to strengthen your research.",
   },
 ];
+
+// Define TypeScript interface for career fields
+interface CareerField {
+  field: string;
+}
+// Static data for career fields (can be moved to a separate file or fetched from an API)
+export const defaultCareerFields: CareerField[] = [
+  { field: "Art & Humanities" },
+  { field: "Biomedical" },
+  { field: "Computer Science" },
+  { field: "Education" },
+  { field: "Environmental Science" },
+  { field: "Engineering" },
+  { field: "Social Sciences" },
+  { field: "History" },
+  { field: "Law" },
+  { field: "Medicine" },
+  { field: "Physics" },
+  { field: "Psychology" },
+];
