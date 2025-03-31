@@ -7,6 +7,77 @@ import SubjectInput from "@/utils/SubjectInput/SubjectInput";
 
 import ContactInfo from "@/sections/ContactInfo/ContactInfo";
 
+/**
+ * ContactForm Component
+ *
+ * @component
+ * @description
+ * A comprehensive contact form with:
+ * - Personal information fields (first name, last name, email, phone)
+ * - Subject selection via radio buttons
+ * - Message textarea
+ * - Form validation
+ * - Submission handling
+ * - Contact information sidebar
+ *
+ * @example
+ * // Basic usage
+ * <ContactForm />
+ *
+ * @state
+ * @property {FormState} formState - Current form values
+ * @property {Object} errors - Validation error messages
+ *
+ * @handlers
+ * @method handleInputChange - Updates form state for text inputs
+ * @method handleCheckboxChange - Updates selected subject
+ * @method handleSubmit - Validates and submits form data
+ *
+ * @validation
+ * - Required field checking
+ * - Email format validation
+ * - Empty message validation
+ *
+ * @interface FormState
+ * @property {string} firstName - User's first name
+ * @property {string} lastName - User's last name
+ * @property {string} email - User's email address
+ * @property {string} phoneNumber - User's phone number
+ * @property {string} subject - Selected subject ("General Inquiry" | "Support")
+ * @property {string} message - User's message content
+ *
+ * @styles {module} styleForm - CSS Module classes:
+ * - `.formSection` - Main container
+ * - `.formContainer` - Form wrapper
+ * - `.inputFields` - Personal info fields container
+ * - `.subjectContainer` - Subject selection fieldset
+ * - `.subjectTitle` - Subject legend text
+ * - `.subjectWrapper` - Radio buttons container
+ * - `.messageContainer` - Message field container
+ * - `.messageLabel` - Message label
+ * - `.textarea` - Message textarea
+ * - `.errorMessage` - Validation error text
+ * - `.submitButton` - Submit button
+ *
+ * @accessibility
+ * - Semantic form structure
+ * - Proper field labeling
+ * - ARIA attributes for errors
+ * - Keyboard navigable
+ * - Screen reader friendly
+ *
+ * @dependencies
+ * - FormField component for text inputs
+ * - SubjectInput component for radio buttons
+ * - ContactInfo component for sidebar
+ *
+ * @improvements
+ * - Add phone number format validation
+ * - Implement actual API submission
+ * - Add loading state during submission
+ * - Include success/error feedback
+ */
+
 interface FormState {
   firstName: string;
   lastName: string;

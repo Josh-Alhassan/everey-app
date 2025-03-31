@@ -9,6 +9,75 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 
+/**
+ * ContactInfo Component
+ *
+ * @component
+ * @description
+ * Displays contact information and social media links in a structured layout.
+ * Features:
+ * - Contact information header
+ * - Phone, email, and location details
+ * - Social media links with icons
+ * - Responsive design
+ *
+ * @example
+ * // Basic usage
+ * <ContactInfo />
+ *
+ * @structure
+ * 1. Header Section:
+ *    - Title: "Contact Information"
+ *    - Subtitle: "Say something to start a live chat!"
+ * 2. Contact Details:
+ *    - Phone number
+ *    - Email address
+ *    - Physical location
+ * 3. Social Media Links:
+ *    - Twitter
+ *    - Instagram
+ *    - Discord
+ *
+ * @interface ContactItem
+ * @property {React.ReactNode} icon - Icon component (from react-icons)
+ * @property {string} text - Contact information text
+ *
+ * @interface SocialLink
+ * @property {React.ReactNode} icon - Social media icon
+ * @property {string} url - Social media URL
+ * @property {string} label - Accessible label for screen readers
+ *
+ * @styles {module} styleInfo - CSS Module classes:
+ * - `.container` - Main container
+ * - `.contactHeader` - Header section
+ * - `.contactTitle` - Title text
+ * - `.contactText` - Subtitle text
+ * - `.contactWrapper` - Content wrapper
+ * - `.contacts` - Contact items container
+ * - `.contact` - Individual contact item
+ * - `.iconContainer` - Icon wrapper
+ * - `.icon` - Contact icon styling
+ * - `.socials` - Social links container
+ * - `.socialLink` - Social link item
+ * - `.socialIcon` - Social icon styling
+ *
+ * @accessibility
+ * - Semantic HTML structure (section, header, main, nav)
+ * - ARIA labels for social links
+ * - Screen reader friendly text
+ * - Keyboard-navigable links
+ * - Sufficient color contrast
+ *
+ * @performance
+ * - Efficient icon rendering
+ * - Lightweight component
+ * - Optimized CSS
+ *
+ * @dependencies
+ * - react-icons for vector icons
+ * - CSS Modules for styling
+ */
+
 // Interface for contact information
 interface ContactItem {
   icon: React.ReactNode;
